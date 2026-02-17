@@ -61,7 +61,7 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 min-w-[200px]">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 min-w-[175px]">
           <div className="bg-white border border-gray-200 rounded-md shadow-lg py-2">
             {items.map((item, index) => {
               const isItemActive = pathname === item.href;
