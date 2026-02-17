@@ -1,8 +1,14 @@
 {
     "navigation": {
         "aboutUs": "私たちについて",
-        "projects": "プロジェクト",
-        "team": "チーム",
+        "projects": {
+            "projects": "プロジェクト",
+            "top": "プロジェクト トップ"
+            },
+        "team": {
+            "team": "チーム",
+            "top": "チーム トップ"
+            },
         "members": "メンバー",
         "recruitment": "メンバー募集",
         "donation": "寄付・協賛",

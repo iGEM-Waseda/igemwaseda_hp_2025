@@ -1,8 +1,14 @@
 {
     "navigation": {
         "aboutUs": "About Us",
-        "projects": "Projects",
-        "team": "Team",
+        "projects": {
+            "projects": "Projects",
+            "top": "Projects Top"
+            },
+        "team": {
+            "team": "Team",
+            "top": "Team Top"
+            },
         "members": "Members",
         "recruitment": "Recruitment",
         "donation": "Donation And Sponsorship",

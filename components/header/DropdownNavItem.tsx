@@ -1,0 +1,89 @@
+'use client';
+
+import { useState, useRef, useEffect } from 'react';
+import { Link, usePathname } from '@/i18n/routing';
+
+type DropdownItem = {
+  label: string;
+  href: string;
+};
+
+type DropdownNavItemProps = {
+  label: string;
+  items: DropdownItem[];
+};
+
+export default function DropdownNavItem({ items, label }: DropdownNavItemProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent | TouchEvent) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, []);
+
+  const isActive = items.some(item => pathname === item.href || pathname.startsWith(item.href.split('#')[0]));
+
+  return (
+    <div 
+      ref={wrapperRef}
+      className="relative flex items-center justify-center"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          setIsOpen(!isOpen);
+        }}
+        className={`flex items-center gap-1 font-medium text-sm xl:text-lg transition-colors focus:outline-none ${
+          isActive || isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]'
+        }`}
+        aria-expanded={isOpen}
+      >
+        {label}
+        <svg 
+          className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {isOpen && (
+        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 min-w-[200px]">
+          <div className="bg-white border border-gray-200 rounded-md shadow-lg py-2">
+            {items.map((item, index) => {
+              const isItemActive = pathname === item.href;
+
+              return (
+                <div key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 ${
+                      isItemActive ? 'font-bold text-[#b94047]' : 'text-gray-700'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                  {index === 0 && <hr className="border-gray-200 my-1" />}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
