@@ -43,3 +43,10 @@ export function TeamTabName() {
 
   return projectItems;
 }
+
+export function MenuName() {
+  const t = useTranslations('common');
+  const menuName = t('menu');
+
+  return menuName;
+}

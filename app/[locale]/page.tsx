@@ -5,7 +5,6 @@ export default function Home() {
   const t = useTranslations('common');
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans">
-      <p>{t('navigation.aboutUs')}</p>
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white sm:items-start">
         <Image
           className="dark:invert"

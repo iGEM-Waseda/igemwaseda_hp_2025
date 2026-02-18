@@ -24,7 +24,7 @@ export default function Header() {
               </Link>
             </div>
 
-            <div className="flex items-center space-x-4 xl:space-x-10">
+            <div className="flex items-center space-x-4 min-[1025px]:space-x-6 xl:space-x-10">
               <NavBar /> {/* PCでのナビゲーション */}
               <ToggleMenu /> {/* タブレット・スマホでのトグルメニュー */}
               <LanguageSwitcher />
