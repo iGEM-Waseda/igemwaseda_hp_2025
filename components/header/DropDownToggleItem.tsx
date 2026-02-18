@@ -47,7 +47,7 @@ export default function DropDownToggleItem({ items, label }: DropdownToggleItemP
     <>
       <button 
         onClick={toggleAccordion}
-        className="flex items-center justify-between w-full px-6 py-4 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 text-gray-700 focus:outline-none"
+        className="flex items-center justify-between w-full px-6 py-4 md:py-6 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 text-gray-700 focus:outline-none"
       >
         {label}
         <span className="text-xl md:text-2xl font-light text-gray-400">

@@ -13,7 +13,7 @@ export default function ToggleMenu() {
   const projectItems = ProjectTabName();
   const teamItems = TeamTabName();
   const menuName = MenuName();
-  const linkClassName = "block px-6 py-4 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 transition-colors text-gray-700"
+  const linkClassName = "block px-6 py-4 md:py-6 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 transition-colors text-gray-700"
   
   // メニュー全体の開閉状態
   const [isOpen, setIsOpen] = useState(false);
