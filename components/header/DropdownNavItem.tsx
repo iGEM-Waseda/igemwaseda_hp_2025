@@ -66,7 +66,7 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50"
+                    className="block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 hover:text-[#b94047] text-gray-700"
                   >
                     {item.label}
                   </Link>

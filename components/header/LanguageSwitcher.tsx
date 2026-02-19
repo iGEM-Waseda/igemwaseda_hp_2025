@@ -65,19 +65,24 @@ export default function LanguageSwitcher() {
       {isOpen && (
         <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
           <div className="w-20 bg-white border border-gray-200 rounded-md shadow-lg py-2">
-            {['ja', 'en'].map((loc) => (
-              <Link
-                key={loc}
-                href={pathname}
-                locale={loc}
-                onClick={() => setIsOpen(false)} // 選んだらメニューを閉じる
-                className={`block px-4 py-2 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 ${
-                  currentLocale === loc ? 'font-bold text-[#b94047]' : 'text-gray-700'
-                }`}
-              >
-                {loc.toUpperCase()}
-              </Link>
-            ))}
+            {['ja', 'en'].map((loc) => {
+              const isSelected = currentLocale === loc;
+              return (
+                <Link
+                  key={loc}
+                  href={pathname}
+                  locale={loc}
+                  onClick={() => setIsOpen(false)} // 選んだらメニューを閉じる
+                  className={`block px-4 py-2 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 hover:text-[#b94047] ${
+                    isSelected 
+                      ? 'font-bold text-[#b94047] underline decoration-2 underline-offset-4' 
+                      : 'text-gray-700'
+                  }`}
+                >
+                  {loc.toUpperCase()}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
