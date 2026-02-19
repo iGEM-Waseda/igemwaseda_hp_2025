@@ -36,7 +36,7 @@ export default function ToggleMenu() {
   };
 
   return (
-    <div className="flex min-[1025px]:hidden">
+    <div className="flex lg:hidden">
       <button
         onClick={() => setIsOpen(true)}
         className="relative w-8 h-8 text-black focus:outline-none z-30"
