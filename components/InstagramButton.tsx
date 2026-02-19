@@ -4,7 +4,7 @@ export default function InstagramButton({ textColor, hoverColor }: { textColor: 
             href="https://www.instagram.com/igemwaseda/" 
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center justify-center text-${textColor} hover:text-${hoverColor} transition-colors`}
+            className={`flex items-center justify-center ${textColor} ${hoverColor} transition-colors`}
             aria-label="Visit our Twitter profile"
         >
             <svg 

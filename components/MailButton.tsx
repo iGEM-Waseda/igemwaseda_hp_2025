@@ -2,7 +2,7 @@ export default function MailButton({ textColor, hoverColor }: { textColor: strin
     return (
         <a
             href="mailto:igemwaseda2020@gmail.com"
-            className={`flex items-center justify-center text-${textColor} hover:text-${hoverColor} transition-colors`}
+            className={`flex items-center justify-center ${textColor} ${hoverColor} transition-colors`}
             aria-label="Send an email"
             >
             <svg 

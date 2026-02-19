@@ -4,7 +4,7 @@ export default function TwitterButton({ textColor, hoverColor }: { textColor: st
             href="https://x.com/wasedaigem" 
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center justify-center text-${textColor} hover:text-${hoverColor} transition-colors`}
+            className={`flex items-center justify-center ${textColor} ${hoverColor} transition-colors`}
             aria-label="Visit our Twitter profile"
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

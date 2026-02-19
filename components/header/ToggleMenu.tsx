@@ -114,9 +114,9 @@ export default function ToggleMenu() {
         </ul>
 
         <div className="flex px-6 py-4 gap-4">
-          <TwitterButton textColor='gray-700' hoverColor='[#b94047]' />
-          <InstagramButton textColor='gray-700' hoverColor='[#b94047]' />
-          <MailButton textColor='gray-700' hoverColor='[#b94047]' />
+          <TwitterButton textColor='text-gray-700' hoverColor='hover:text-[#b94047]' />
+          <InstagramButton textColor='text-gray-700' hoverColor='hover:text-[#b94047]' />
+          <MailButton textColor='text-gray-700' hoverColor='hover:text-[#b94047]' />
         </div>
       </div>
     </div>
