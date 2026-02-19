@@ -1,7 +1,7 @@
 export default function MailButton({ textColor, hoverColor }: { textColor: string; hoverColor: string }) {
     return (
         <a
-            href="mailto:your-team-address@example.com"
+            href="mailto:igemwaseda2020@gmail.com"
             className={`flex items-center justify-center text-${textColor} hover:text-${hoverColor} transition-colors`}
             aria-label="Send an email"
             >

@@ -62,7 +62,7 @@ export default function DropDownToggleItem({ items, label }: DropdownToggleItemP
               <Link 
                 href={item.href} 
                 onClick={handleLinkClick}
-                className="block py-3 pl-6 pr-6 text-xs md:text-base transition-colors hover:bg-gray-100 text-gray-700"
+                className="block py-3 md:py-4 pl-6 pr-6 text-xs md:text-base transition-colors hover:bg-gray-100 text-gray-700"
               >
                 {item.label}
               </Link>
