@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "iGEM - Waseda",
@@ -44,6 +45,7 @@ export default async function LocaleLayout({ children, params }: {
             <main className="min-h-screen">
               {children}
             </main>
+            <Footer />
           </NextIntlClientProvider>
       </body>
     </html>

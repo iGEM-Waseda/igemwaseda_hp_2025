@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Link, usePathname } from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 
 type DropdownItem = {
   label: string;
@@ -15,7 +15,6 @@ type DropdownNavItemProps = {
 
 export default function DropdownNavItem({ items, label }: DropdownNavItemProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,8 +31,6 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
     };
   }, []);
 
-  const isActive = items.some(item => pathname === item.href || pathname.startsWith(item.href.split('#')[0]));
-
   return (
     <div 
       ref={wrapperRef}
@@ -47,7 +44,7 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
           setIsOpen(!isOpen);
         }}
         className={`flex items-center gap-1 font-medium text-sm xl:text-lg transition-colors focus:outline-none ${
-          isActive || isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]'
+          isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]'
         }`}
         aria-expanded={isOpen}
       >
@@ -64,16 +61,12 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
         <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 min-w-[150px]">
           <div className="bg-white border border-gray-200 rounded-md shadow-lg py-2">
             {items.map((item, index) => {
-              const isItemActive = pathname === item.href;
-
               return (
                 <div key={item.href}>
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 ${
-                      isItemActive ? 'font-bold text-[#b94047]' : 'text-gray-700'
-                    }`}
+                    className="block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50"
                   >
                     {item.label}
                   </Link>
