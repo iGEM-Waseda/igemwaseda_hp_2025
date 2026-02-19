@@ -35,7 +35,7 @@ export default async function LocaleLayout({ children, params }: {
   const messages = await getMessages();
 
   const bodyFont = locale === 'ja' ? notoJP.className : notoJP.className; // とりあえず英語の本文もNotoにしておく
-  console.log(`Locale: ${locale}, Body Font: ${bodyFont}`);
+  // console.log(`Locale: ${locale}, Body Font: ${bodyFont}`);
 
   return (
     <html lang={locale} style={{ colorScheme: 'light' }}>
