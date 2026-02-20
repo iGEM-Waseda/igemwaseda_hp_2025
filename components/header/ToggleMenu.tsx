@@ -64,7 +64,7 @@ export default function ToggleMenu() {
           <span className="font-bold text-base md:text-xl text-gray-800">{menuName}</span>
           <button 
             onClick={() => setIsOpen(false)}
-            className="p-2 text-gray-500 hover:text-[#b94047] focus:outline-none"
+            className="p-2 text-gray-500 hover:text-[#b94047] focus:outline-none" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
             aria-label="Close Menu"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -44,7 +44,7 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
           setIsOpen(!isOpen);
         }}
         className={`flex items-center gap-1 font-medium text-sm xl:text-lg transition-colors focus:outline-none ${
-          isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]'
+          isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]' // ホバー時の色は#b94047(フッターの色とはちょっと違う)
         }`}
         aria-expanded={isOpen}
       >
@@ -66,7 +66,7 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 hover:text-[#b94047] text-gray-700"
+                    className="block px-5 py-3 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 hover:text-[#b94047] text-gray-700" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
                   >
                     {item.label}
                   </Link>
