@@ -13,9 +13,20 @@ export default function Footer() {
   
   return (
     <footer className="w-full bg-[#5a131d] text-white py-12">
-      <div className="max-w-screen-2xl mx-auto px-6 md:px-8">
-        <div className="mb-6 sm:mb-8 md:mb-12 lg:mb-16 items-center justify-center text-center">
-          <Link href="/" className="font-heading-en antialiased font-black inline-block text-[10vw] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] xl:text-[11rem] 2xl:text-[12rem] font-black tracking-tighter leading-none hover:opacity-90 transition-opacity" style={{ fontFamily: '"Arial Black", sans-serif', fontWeight: 900 }}>{/* iPhoneやiPadのSafariだとどうもうまく行かないのでゴリ押し */}
+      <div className="max-w-screen-2xl mx-auto px-8">
+        <div 
+          className="mb-6 sm:mb-8 md:mb-12 lg:mb-16 w-full text-center overflow-hidden"
+          style={{ containerType: 'inline-size' }}
+        >
+          <Link 
+            href="/" 
+            // ▼ 対策2: スマホ(デフォルト)の数値を 14.5cqw から 13.8〜14.2cqw あたりに少しだけ下げる
+            className="font-heading-en antialiased inline-block tracking-tighter leading-none hover:opacity-90 transition-opacity whitespace-nowrap text-[13.3cqw] md:text-[13.9cqw] lg:text-[14cqw] xl:text-[14.4cqw]" 
+            style={{ 
+              fontFamily: '"Arial Black", sans-serif', 
+              fontWeight: 900 
+            }}
+          >
             iGEM-<span className="text-[#dbae07]">W</span>aseda
           </Link>
         </div>
