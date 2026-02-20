@@ -20,8 +20,7 @@ export default function Footer() {
         >
           <Link 
             href="/" 
-            // ▼ 対策2: スマホ(デフォルト)の数値を 14.5cqw から 13.8〜14.2cqw あたりに少しだけ下げる
-            className="font-heading-en antialiased inline-block tracking-tighter leading-none hover:opacity-90 transition-opacity whitespace-nowrap text-[13.3cqw] md:text-[13.9cqw] lg:text-[14cqw] xl:text-[14.4cqw]" 
+            className="font-heading-en antialiased inline-block tracking-tighter leading-none hover:opacity-90 transition-opacity whitespace-nowrap text-[13.3cqw] md:text-[13.9cqw] lg:text-[14cqw] xl:text-[14.4cqw]" // ゴリ押し
             style={{ 
               fontFamily: '"Arial Black", sans-serif', 
               fontWeight: 900 
