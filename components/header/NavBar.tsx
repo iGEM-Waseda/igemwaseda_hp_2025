@@ -9,7 +9,7 @@ export default function NavBar() {
   const listClassName = "text-gray-700 text-sm xl:text-lg font-medium transition-colors hover:text-[#b94047]" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
 
   return (
-    <nav className="hidden lg:flex space-x-3 xl:space-x-6">
+    <nav className="hidden lg:flex space-x-3 xl:space-x-5">
       <Link href={pages[0].href} className={listClassName}>
         {pages[0].label}
       </Link>

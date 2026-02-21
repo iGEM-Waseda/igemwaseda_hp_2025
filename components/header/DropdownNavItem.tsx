@@ -43,7 +43,7 @@ export default function DropdownNavItem({ items, label }: DropdownNavItemProps) 
           e.preventDefault();
           setIsOpen(!isOpen);
         }}
-        className={`flex items-center gap-1 font-medium text-sm xl:text-lg transition-colors focus:outline-none ${
+        className={`flex items-center gap-0.5 xl:gap-1 font-medium text-sm xl:text-lg transition-colors focus:outline-none ${
           isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]' // ホバー時の色は#b94047(フッターの色とはちょっと違う)
         }`}
         aria-expanded={isOpen}
