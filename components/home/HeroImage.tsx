@@ -11,7 +11,6 @@ export default function HeroImage() {
         fill // 親要素いっぱいに広げる
         priority
         className="object-cover object-center"
-        quality={100}
         sizes="(max-width: 768px) 300vw, 100vw"
       />
 
