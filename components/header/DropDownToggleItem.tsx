@@ -47,7 +47,7 @@ export default function DropDownToggleItem({ items, label }: DropdownToggleItemP
     <>
       <button 
         onClick={toggleAccordion}
-        className="flex items-center justify-between w-full px-6 py-4 md:py-6 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 text-gray-700 hover:text-[#b94047] focus:outline-none" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
+        className="flex items-center justify-between w-full px-6 py-4 md:py-6 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 text-gray-700 hover:text-enji-hover focus:outline-none" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
       >
         {label}
         <span className="text-xl md:text-2xl font-light text-gray-400">
@@ -62,7 +62,7 @@ export default function DropDownToggleItem({ items, label }: DropdownToggleItemP
               <Link 
                 href={item.href} 
                 onClick={handleLinkClick}
-                className="block py-3 md:py-4 pl-6 pr-6 text-xs md:text-base transition-colors hover:bg-gray-100 text-gray-700 hover:text-[#b94047]" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
+                className="block py-3 md:py-4 pl-6 pr-6 text-xs md:text-base transition-colors hover:bg-gray-100 text-gray-700 hover:text-enji-hover" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
               >
                 {item.label}
               </Link>

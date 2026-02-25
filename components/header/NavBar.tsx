@@ -6,7 +6,7 @@ export default function NavBar() {
   const pages = PageName();
   const projectItems = ProjectTabName();
   const teamItems = TeamTabName();
-  const listClassName = "text-gray-700 text-sm xl:text-lg font-medium transition-colors hover:text-[#b94047]" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
+  const listClassName = "text-gray-700 text-sm xl:text-lg font-medium transition-colors hover:text-enji-hover" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
 
   return (
     <nav className="hidden lg:flex space-x-3 xl:space-x-5">

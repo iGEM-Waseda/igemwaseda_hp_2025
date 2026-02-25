@@ -42,7 +42,7 @@ export default function LanguageSwitcher() {
           setIsOpen(!isOpen);
         }}
         className={`flex items-center justify-center focus:outline-none transition-colors ${
-          isOpen ? 'text-[#b94047]' : 'text-gray-700 hover:text-[#b94047]'
+          isOpen ? 'text-enji-hover' : 'text-gray-700 hover:text-enji-hover'
         }`}
         aria-label="Language Switcher"
         aria-expanded={isOpen}
@@ -73,9 +73,9 @@ export default function LanguageSwitcher() {
                   href={pathname}
                   locale={loc}
                   onClick={() => setIsOpen(false)} // 選んだらメニューを閉じる
-                  className={`block px-4 py-2 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 hover:text-[#b94047] ${
+                  className={`block px-4 py-2 text-xs xl:text-sm text-center transition-colors hover:bg-gray-50 hover:text-enji-hover ${
                     isSelected 
-                      ? 'font-bold text-[#b94047] underline decoration-2 underline-offset-4' 
+                      ? 'font-bold text-enji-hover underline decoration-2 underline-offset-4' 
                       : 'text-gray-700'
                   }`}
                 >

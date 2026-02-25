@@ -13,7 +13,7 @@ export default function ToggleMenu() {
   const projectItems = ProjectTabName();
   const teamItems = TeamTabName();
   const menuName = MenuName();
-  const linkClassName = "block px-6 py-4 md:py-6 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 transition-colors text-gray-700 hover:text-[#b94047]";
+  const linkClassName = "block px-6 py-4 md:py-6 text-sm md:text-lg border-b hover:bg-gray-100 border-gray-50 transition-colors text-gray-700 hover:text-enji-hover";
   
   // メニュー全体の開閉状態
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function ToggleMenu() {
         className="relative w-8 h-8 text-black focus:outline-none z-30"
         aria-label="Open Menu"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full hover:text-[#b94047]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full hover:text-enji-hover">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" />
         </svg>
       </button>
@@ -64,7 +64,7 @@ export default function ToggleMenu() {
           <span className="font-bold text-base md:text-xl text-gray-800">{menuName}</span>
           <button 
             onClick={() => setIsOpen(false)}
-            className="p-2 text-gray-500 hover:text-[#b94047] focus:outline-none" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
+            className="p-2 text-gray-500 hover:text-enji-hover focus:outline-none" // ホバー時の色は#b94047(フッターの色とはちょっと違う)
             aria-label="Close Menu"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -114,9 +114,9 @@ export default function ToggleMenu() {
         </ul>
 
         <div className="flex px-6 py-4 gap-4">
-          <TwitterButton textColor='text-gray-700' hoverColor='hover:text-[#b94047]' />
-          <InstagramButton textColor='text-gray-700' hoverColor='hover:text-[#b94047]' />
-          <MailButton textColor='text-gray-700' hoverColor='hover:text-[#b94047]' />
+          <TwitterButton textColor='text-gray-700' hoverColor='hover:text-enji-hover' />
+          <InstagramButton textColor='text-gray-700' hoverColor='hover:text-enji-hover' />
+          <MailButton textColor='text-gray-700' hoverColor='hover:text-enji-hover' />
         </div>
       </div>
     </div>
