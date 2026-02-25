@@ -22,7 +22,7 @@ export default function HeroImage() {
           iGEM 2024 Top 10 Worldwide / Gold Medalist
         </p>
         <h1 className="font-heading-en leading-none my-3 sm:my-2 xl:my-0 text-[12vw] font-black text-white tracking-tight" style={{ fontFamily: '"Arial Black", sans-serif', fontWeight: 900 }}>
-          iGEM-<span className="text-[#8f1727]">W</span>aseda
+          iGEM-<span className="text-enji-text">W</span>aseda
         </h1>
         <p className="font-heading-en text-[3.25vw] sm:text-[3.2vw] md:text-[3vw] lg:text-[2.5vw] xl:text-[2vw] text-white font-medium" style={{ fontFamily: '"Arial Black", sans-serif', fontWeight: 900 }}>
           Waseda University Synthetic Biology Team
