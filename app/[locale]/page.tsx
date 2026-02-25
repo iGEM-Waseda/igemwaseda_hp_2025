@@ -13,6 +13,8 @@ export default function Home() {
     <>
       <HeroImage /> {/* あんまモジュールわけする必要なかったヒーローイメージ */}
 
+      {/* ここにニュースを挿入 */}
+
       <section className="w-full bg-white"> {/* About Us */}
         <div className="grid grid-cols-1 md:grid-cols-2"> {/* PCではロゴとテキストを横並び、スマホではロゴをテキストの上に配置 */}
           <div className="relative aspect-square absolute md:bottom-[-50px] xl:bottom-[-75px] z-30">
