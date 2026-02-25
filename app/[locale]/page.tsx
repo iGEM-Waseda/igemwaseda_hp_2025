@@ -166,6 +166,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="w-full relative"> {/* Recruiting Members */}
+        {/* PCでは写真+黒不透明度65%の背景の上に文字を配置。スマホでは縦に並べる. */}
+        <div className="w-full md:aspect-[2/1]">
+          <div className="relative aspect-square md:aspect-auto h-full">
+            <Image 
+              src="/recruiting-hero-image.jpg"
+              alt="iGEM - Waseda Won the Village Prize at iGEM 2024"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+
+        <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" />
+        {/* <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" /> スマホで写真の上に薄い黒背景をつける場合はこれを有効化 */}
+
+        <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
+          <div className="mb-8">
+            <h2 
+              className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-white"
+              style={{ fontFamily: '"Arial Black", sans-serif' }}
+            >
+              Recruiting<br />Members
+            </h2>
+            <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text md:text-white">
+              メンバー募集
+            </p>
+          </div>
+
+          <p className="md:max-w-[50%] text-sm lg:text-lg xl:text-xl 2xl:text-[1vw] font-medium text-gray-800 md:text-white leading-loose mb-4 lg:mb-8">
+            {t('home.recruitment')}
+          </p>
+
+          <LearnMore href={pages[4].href} textColor="text-gray-900 md:text-white"/>
+        </div>
+
+      </section>
+
       <section className="w-full relative"> {/* Donations and Sponsorship */}
         {/* PCでは写真+黒不透明度65%の背景の上に文字を配置。スマホでは縦に並べる. */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 md:aspect-[2/1]">
