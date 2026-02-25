@@ -12,7 +12,7 @@ export default function Footer() {
   const teamItems = TeamTabName();
   
   return (
-    <footer className="w-full bg-[#5a131d] text-white py-12">
+    <footer className="w-full bg-[#5a131d] text-white py-12"> {/* フッターの色は#5a131d */}
       <div className="max-w-screen-2xl mx-auto px-8">
         <div 
           className="mb-6 sm:mb-8 md:mb-12 lg:mb-16 w-full text-center overflow-hidden"
@@ -26,38 +26,38 @@ export default function Footer() {
               fontWeight: 900 
             }}
           >
-            iGEM-<span className="text-[#dbae07]">W</span>aseda
+            iGEM-<span className="text-yellow">W</span>aseda
           </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8 md:mb-12 lg:mb-16">
           
           <div className="flex flex-col space-y-5 text-sm sm:text-base md:text-lg font-medium tracking-wide">
-            <Link href={pages[0].href} className="hover:text-[#dbae07] transition-colors w-fit">{pages[0].label}</Link>
-            <Link href={pages[3].href} className="hover:text-[#dbae07] transition-colors w-fit">{pages[3].label}</Link>
-            <Link href={pages[4].href} className="hover:text-[#dbae07] transition-colors w-fit">{pages[4].label}</Link>
-            <Link href={pages[5].href} className="hover:text-[#dbae07] transition-colors w-fit">{pages[5].label}</Link>
-            <Link href={pages[6].href} className="hover:text-[#dbae07] transition-colors w-fit">{pages[6].label}</Link>
+            <Link href={pages[0].href} className="hover:text-yellow transition-colors w-fit">{pages[0].label}</Link>
+            <Link href={pages[3].href} className="hover:text-yellow transition-colors w-fit">{pages[3].label}</Link>
+            <Link href={pages[4].href} className="hover:text-yellow transition-colors w-fit">{pages[4].label}</Link>
+            <Link href={pages[5].href} className="hover:text-yellow transition-colors w-fit">{pages[5].label}</Link>
+            <Link href={pages[6].href} className="hover:text-yellow transition-colors w-fit">{pages[6].label}</Link>
           </div>
 
           <div>
             <h3 className="text-sm sm:text-base md:text-lg font-medium tracking-wide mb-5">{pages[1].label}</h3>
             <div className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm sm:text-base md:text-lg">
-              <Link href={projectItems[0].href} className="hover:text-[#dbae07] transition-colors w-fit">{projectItems[0].label}</Link>
-              <Link href={projectItems[1].href} className="hover:text-[#dbae07] transition-colors w-fit">{projectItems[1].label}</Link>
-              <Link href={projectItems[2].href} className="hover:text-[#dbae07] transition-colors w-fit">{projectItems[2].label}</Link>
-              <Link href={projectItems[3].href} className="hover:text-[#dbae07] transition-colors w-fit">{projectItems[3].label}</Link>
+              <Link href={projectItems[0].href} className="hover:text-yellow transition-colors w-fit">{projectItems[0].label}</Link>
+              <Link href={projectItems[1].href} className="hover:text-yellow transition-colors w-fit">{projectItems[1].label}</Link>
+              <Link href={projectItems[2].href} className="hover:text-yellow transition-colors w-fit">{projectItems[2].label}</Link>
+              <Link href={projectItems[3].href} className="hover:text-yellow transition-colors w-fit">{projectItems[3].label}</Link>
             </div>
           </div>
 
           <div className="relative">
             <h3 className="text-sm sm:text-base md:text-lg font-medium tracking-wide mb-5">{pages[2].label}</h3>
             <div className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm sm:text-base md:text-lg">
-              <Link href={teamItems[0].href} className="hover:text-[#dbae07] transition-colors w-fit">{teamItems[0].label}</Link>
-              <Link href={teamItems[1].href} className="hover:text-[#dbae07] transition-colors w-fit">{teamItems[1].label}</Link>
-              <Link href={teamItems[2].href} className="hover:text-[#dbae07] transition-colors w-fit">{teamItems[2].label}</Link>
-              <Link href={teamItems[3].href} className="hover:text-[#dbae07] transition-colors w-fit">{teamItems[3].label}</Link>
-              <Link href={teamItems[4].href} className="hover:text-[#dbae07] transition-colors w-fit">{teamItems[4].label}</Link>
+              <Link href={teamItems[0].href} className="hover:text-yellow transition-colors w-fit">{teamItems[0].label}</Link>
+              <Link href={teamItems[1].href} className="hover:text-yellow transition-colors w-fit">{teamItems[1].label}</Link>
+              <Link href={teamItems[2].href} className="hover:text-yellow transition-colors w-fit">{teamItems[2].label}</Link>
+              <Link href={teamItems[3].href} className="hover:text-yellow transition-colors w-fit">{teamItems[3].label}</Link>
+              <Link href={teamItems[4].href} className="hover:text-yellow transition-colors w-fit">{teamItems[4].label}</Link>
             </div>
 
             <div className="hidden lg:flex absolute bottom-0 right-0 gap-6">
@@ -83,9 +83,9 @@ export default function Footer() {
 function SocialIcons() {
   return (
     <>
-      <TwitterButton textColor='text-white' hoverColor='hover:text-[#dbae07]' />
-      <InstagramButton textColor='text-white' hoverColor='hover:text-[#dbae07]' />
-      <MailButton textColor='text-white' hoverColor='hover:text-[#dbae07]' />
+      <TwitterButton textColor='text-white' hoverColor='hover:text-yellow' />
+      <InstagramButton textColor='text-white' hoverColor='hover:text-yellow' />
+      <MailButton textColor='text-white' hoverColor='hover:text-yellow' />
     </>
   )
 }

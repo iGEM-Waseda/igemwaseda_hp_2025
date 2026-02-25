@@ -11,7 +11,9 @@
   --color-background: var(--background);
   --variant-dark: .dark &;
   --font-heading-en: "Arial Black", Arial, sans-serif;
-  --color-enji-hover: #b94047; /* フッターの色とはちょっと違う * /
+  --color-enji-hover: #b94047;
+  --color-enji-text: #8f1727;
+  --color-yellow: #dbae07;
   /* --color-foreground: var(--foreground); */
   /* --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono); */

@@ -18,7 +18,7 @@ export default function HeroImage() {
       <div className="absolute inset-0 bg-black/65 z-0"></div>
 
       <div className="relative z-10 text-center px-2 flex flex-col items-center">
-        <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[2vw] xl:text-[1.5vw] text-[#dbae07] font-medium">
+        <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[2vw] xl:text-[1.5vw] text-yellow font-medium">
           iGEM 2024 Top 10 Worldwide / Gold Medalist
         </p>
         <h1 className="font-heading-en leading-none my-3 sm:my-2 xl:my-0 text-[12vw] font-black text-white tracking-tight" style={{ fontFamily: '"Arial Black", sans-serif', fontWeight: 900 }}>
