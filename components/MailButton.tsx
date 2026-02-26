@@ -7,8 +7,7 @@ export default function MailButton({ textColor, hoverColor }: { textColor: strin
             >
             <svg 
                 xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
+                className="w-6 h-6 lg:w-8 lg:h-8" 
                 viewBox="0 0 24 24" 
                 fill="none" 
                 stroke="currentColor" 
