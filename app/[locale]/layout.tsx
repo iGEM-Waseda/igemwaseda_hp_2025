@@ -42,7 +42,7 @@ export default async function LocaleLayout({ children, params }: {
       <body className={`${bodyFont} bg-white`}>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header/>
-            <main className="min-h-screen">
+            <main>
               {children}
             </main>
             <Footer />
