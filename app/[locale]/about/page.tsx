@@ -13,7 +13,7 @@ export default function About() {
           <div className="relative h-full">
             <Image 
               src="/iGEM-Waseda_logo_trim.png"
-              alt="iGEM - Waseda Won the Village Prize at iGEM 2024"
+              alt="iGEM - Waseda logoc"
               fill
               className="object-contain p-4 md:p-8"
             />
@@ -26,12 +26,12 @@ export default function About() {
         <div className="absolute inset-0 z-30 grid grid-cols-2">
           <div className="flex flex-col justify-center col-start-2">
             <h2 
-              className="font-heading-en font-black text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-white"
+              className="font-heading-en font-black text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-white"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
               About Us
             </h2>
-            <p className="text-sm md: text-base lg:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-white">
+            <p className="text-sm md:text-base lg:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-white">
               私たちについて
             </p>
           </div>
