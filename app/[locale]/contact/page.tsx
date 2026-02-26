@@ -1,5 +1,4 @@
 import Image from "next/image"
-import MailButton from "@/components/MailButton"
 import TwitterButton from "@/components/TwitterButton"
 import InstagramButton from "@/components/InstagramButton"
 import { useTranslations } from "next-intl"
@@ -45,12 +44,14 @@ export default function Contact() {
           {t('contact')}
         </h2>
 
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col item-center">
-            <h2 className="text-sm sm:text-base md:text-xl lg:text-3xl font-medium mb-8 md:mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col item-center mb-12 md:mb-16">
+            <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-8 md:mb-12">
               {t('mail')}
             </h2>
-            <MailButton textColor="text-gray-800" hoverColor="hover:text-yellow" />
+            <a href="mailto:igemwaseda2020@gmail.com" className="text-sm sm:text-base md:text-xl lg:text-2xl underline text-gray-800 hover:text-yellow">
+              igemwaseda2020@gmail.com
+            </a>
           </div>
 
           <div className="flex flex-col item-center">
