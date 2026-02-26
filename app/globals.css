@@ -42,3 +42,86 @@ body {
 .font-heading-en {
   font-family: var(--font-heading-en);
 }
+
+.section {
+  max-width: 1024px; /* max-w-screen-lg */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  margin-top: 2rem; /* my-16 (64px) */
+  margin-bottom: 2rem; /* my-16 (64px) */
+  padding-left: 1rem; /* px-4 (16px) */
+  padding-right: 1rem; /* px-4 (16px) */
+}
+
+/* sm (640px以上) のスタイル */
+@media (min-width: 640px) {
+  .section {
+    margin-top: 4rem; /* sm:my-8 (32px) */
+    margin-bottom: 4rem; /* sm:my-8 (32px) */
+  }
+}
+
+/* md (768px以上) のスタイル */
+@media (min-width: 768px) {
+  .section {
+    padding-left: 2rem; /* md:px-8 (32px) */
+    padding-right: 2rem; /* md:px-8 (32px) */
+  }
+}
+
+/* 基本のスタイル（スマホ向け） */
+.heading {
+  color: #8f1727; /* text-[#8f1727] */
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 2.5rem; /* text-4xl の行間 (40px) */
+  font-weight: 700; /* font-bold */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  margin-top: 2rem; /* my-16 (64px) */
+  margin-bottom: 0.5rem; /* my-16 (64px) */
+}
+
+/* md (768px以上) のスタイル */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+    line-height: 1; /* md:text-6xl の行間 */
+    margin-top: 4rem; /* my-16 (64px) */
+    margin-bottom: 2rem; /* my-16 (64px) */
+  }
+}
+
+/* p のスタイル */
+.text {
+  color: #1f2937;
+  color: oklch(27.8% 0.033 256.848); /* text-gray-800 */
+  font-size: 0.875rem;
+  margin-top: 0.5rem; /* my-2 (8px) */
+  margin-bottom: 0.5rem;
+  margin-left: auto; /* mx-auto */
+  margin-right: auto;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+  line-height: 2;
+}
+
+/* p の md (768px以上) のスタイル */
+@media (min-width: 768px) {
+  .text {
+    font-size: 1.125rem; /* md:text-xl (20px) */
+    margin-top: 1rem; /* md:my-4 (16px) */
+    margin-bottom: 1rem;
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+}
+
+.img {
+  width: 80%; /* w-3/5 */
+  margin-top: 1.5rem; /* my-6 (24px) */
+  margin-bottom: 1.5rem; /* my-6 (24px) */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  display: block; /* ★重要：通常のCSSで画像を中央寄せするために必要です */
+}
