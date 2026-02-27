@@ -43,6 +43,7 @@ body {
   font-family: var(--font-heading-en);
 }
 
+/* sectionのスタイル */
 .section {
   max-width: 1024px; /* max-w-screen-lg */
   margin-left: auto; /* mx-auto */
@@ -69,7 +70,7 @@ body {
   }
 }
 
-/* 基本のスタイル（スマホ向け） */
+/* h1のスタイル（スマホ向け） */
 .heading {
   color: #8f1727; /* text-[#8f1727] */
   font-weight: 700;
@@ -117,6 +118,7 @@ body {
   }
 }
 
+/* imageのスタイル */
 .img {
   width: 80%; /* w-3/5 */
   margin-top: 1.5rem; /* my-6 (24px) */
