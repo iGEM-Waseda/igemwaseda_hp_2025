@@ -25,12 +25,12 @@ export default function About() {
 
         <div className="absolute inset-0 z-30 grid grid-cols-2">
           <div className="flex flex-col justify-center col-start-2">
-            <h2 
+            <h3 
               className="font-heading-en font-black text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-white"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
               About Us
-            </h2>
+            </h3>
             <p className="text-sm md:text-base lg:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-white">
               私たちについて
             </p>

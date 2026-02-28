@@ -28,12 +28,12 @@ export default function Home() {
 
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square">
             <div className="mb-8">
-              <h2 
+              <h3 
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
                 About Us
-              </h2>
+              </h3>
               <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text">
                 私たちについて
               </p>
@@ -73,12 +73,12 @@ export default function Home() {
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
-            <h2 
+            <h3 
               className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
               Projects
-            </h2>
+            </h3>
             <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text md:text-yellow">
               プロジェクト
             </p>
@@ -106,12 +106,12 @@ export default function Home() {
 
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square">
             <div className="mb-8">
-              <h2 
+              <h3 
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
                 Team
-              </h2>
+              </h3>
               <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text">
                 チーム
               </p>
@@ -139,12 +139,12 @@ export default function Home() {
 
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square">
             <div className="mb-8">
-              <h2 
+              <h3 
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
                 Members
-              </h2>
+              </h3>
               <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text">
                 メンバー(写真は今年度のものに置き換えたい)
               </p>
@@ -186,12 +186,12 @@ export default function Home() {
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
-            <h2 
+            <h3 
               className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-white"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
               Recruiting<br />Members
-            </h2>
+            </h3>
             <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text md:text-white">
               メンバー募集
             </p>
@@ -225,12 +225,12 @@ export default function Home() {
         <div className="md:absolute inset-0 z-30 grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:col-start-2">
             <div className="mb-8">
-              <h2 
+              <h3 
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
                 Donations and<br />Sponsorship
-              </h2>
+              </h3>
               <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text md:text-yellow">
                 寄付・協賛
               </p>

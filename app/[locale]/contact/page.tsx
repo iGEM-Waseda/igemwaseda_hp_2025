@@ -26,12 +26,12 @@ export default function Contact() {
 
         <div className="absolute inset-0 z-30 grid grid-cols-2 px-8 py-4 md:px-24">
           <div className="flex flex-col justify-center">
-            <h2 
+            <h3 
               className="font-heading-en font-black text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-white"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
               Contact
-            </h2>
+            </h3>
             <p className="text-sm md:text-base lg:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-white">
               お問い合わせ
             </p>
@@ -40,24 +40,24 @@ export default function Contact() {
       </section>
 
       <section className="section text-center">
-        <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-16 md:mb-24">
+        <h3 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-16 md:mb-24">
           {t('contact')}
-        </h2>
+        </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col item-center mb-12 md:mb-16">
-            <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-8 md:mb-12">
+            <h3 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-8 md:mb-12">
               {t('mail')}
-            </h2>
+            </h3>
             <a href="mailto:igemwaseda2020@gmail.com" className="text-sm sm:text-base md:text-xl lg:text-2xl underline text-gray-800 hover:text-yellow">
               igemwaseda2020@gmail.com
             </a>
           </div>
 
           <div className="flex flex-col item-center">
-            <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-8 md:mb-12">
+            <h3 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-medium mb-8 md:mb-12">
               {t('sns')}
-            </h2>
+            </h3>
             <div className="flex item-center justify-center gap-4 lg:gap-6">
               <TwitterButton textColor="text-gray-800" hoverColor="hover:text-yellow" />
               <InstagramButton textColor="text-gray-800" hoverColor="hover:text-yellow" />
