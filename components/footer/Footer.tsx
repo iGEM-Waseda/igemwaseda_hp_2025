@@ -71,7 +71,7 @@ export default function Footer() {
             <SocialIcons />
           </div>
           <p className="text-sm tracking-wider font-light">
-            &copy; 2026 iGEM - Waseda
+            &copy; 2026 iGEM - Waseda.
           </p>
         </div>
 
