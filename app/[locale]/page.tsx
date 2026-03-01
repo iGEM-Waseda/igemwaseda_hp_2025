@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full relative"> {/* Projects */}
+      <section className="w-full relative bg-black"> {/* Projects */}
         {/* PCでは写真+黒不透明度65%の背景の上に文字を配置。スマホでは縦に並べる. */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 md:aspect-[2/1]">
           <div className="bg-black hidden md:block relative h-full md:col-span-1" />
@@ -68,27 +68,27 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" />
-        {/* <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" /> */} {/* スマホで写真の上に薄い黒背景をつける場合はこれを有効化 */}
+        <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" /> {/* PC */}
+        <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" /> {/* スマホ */}
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
             <h3 
-              className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
+              className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-yellow"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
               Projects
             </h3>
-            <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text md:text-yellow">
+            <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-yellow">
               プロジェクト
             </p>
           </div>
 
-          <p className="md:max-w-[50%] text-sm lg:text-lg xl:text-xl 2xl:text-[1vw] font-medium text-gray-800 md:text-white leading-loose mb-4 lg:mb-8">
+          <p className="md:max-w-[50%] text-sm lg:text-lg xl:text-xl 2xl:text-[1vw] font-medium text-white leading-loose mb-4 lg:mb-8">
             {t('home.projects')}
           </p>
 
-          <LearnMore href={pages[1].href} textColor="text-gray-900 md:text-white"/>
+          <LearnMore href={pages[1].href} textColor="text-white"/>
         </div>
 
       </section>
@@ -177,12 +177,13 @@ export default function Home() {
               alt="iGEM - Waseda Won the Village Prize at iGEM 2024"
               fill
               className="object-cover object-center"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
         </div>
 
-        <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" />
-        {/* <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" /> スマホで写真の上に薄い黒背景をつける場合はこれを有効化 */}
+        <div className="absolute inset-0 bg-black/35 z-0 hidden md:block" />
+        {/* <div className="absolute inset-0 bg-black/35 z-0 aspect-square md:hidden" /> */}
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
@@ -206,7 +207,7 @@ export default function Home() {
 
       </section>
 
-      <section className="w-full relative"> {/* Donations and Sponsorship */}
+      <section className="w-full relative bg-[#0f0b08]"> {/* Donations and Sponsorship */}
         {/* PCでは写真+黒不透明度65%の背景の上に文字を配置。スマホでは縦に並べる. */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 md:aspect-[2/1]">
           <div className="relative md:col-span-2 aspect-square md:aspect-auto h-full">
@@ -221,26 +222,27 @@ export default function Home() {
         </div>
 
         <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" />
+        <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" /> {/* スマホ */}
 
         <div className="md:absolute inset-0 z-30 grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:col-start-2">
             <div className="mb-8">
               <h3 
-                className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
+                className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-yellow"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
                 Donations and<br />Sponsorship
               </h3>
-              <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text md:text-yellow">
+              <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-yellow">
                 寄付・協賛
               </p>
             </div>
 
-            <p className="text-sm lg:text-lg xl:text-xl 2xl:text-[1vw] font-medium text-gray-800 md:text-white leading-loose mb-4 lg:mb-8">
+            <p className="text-sm lg:text-lg xl:text-xl 2xl:text-[1vw] font-medium text-white leading-loose mb-4 lg:mb-8">
               {t('home.donation')}
             </p>
 
-            <LearnMore href={pages[5].href} textColor="text-gray-900 md:text-white"/>
+            <LearnMore href={pages[5].href} textColor="text-white"/>
           </div>
         </div>
 
