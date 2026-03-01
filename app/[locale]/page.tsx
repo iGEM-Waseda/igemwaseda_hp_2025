@@ -102,7 +102,7 @@ export default function Home() {
               src="/team-hero-image.png" 
               alt="iGEM Waseda Team Working" 
               fill 
-              className="pb-4 md:pb-0"
+              className=""
               sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
@@ -136,7 +136,7 @@ export default function Home() {
               src="/home-hero-image.jpg" 
               alt="iGEM - Waseda Members" 
               fill 
-              className="pb-4 md:pb-0 object-cover"
+              className="object-cover"
               sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
