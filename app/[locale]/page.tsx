@@ -23,6 +23,7 @@ export default function Home() {
               alt="iGEM - Waseda Team Logo" 
               fill 
               className="p-4"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
 
@@ -64,12 +65,13 @@ export default function Home() {
               alt="iGEM - Waseda Won the Village Prize at iGEM 2024"
               fill
               className="object-cover object-center md:hidden"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
         </div>
 
         <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" />
-        {/* <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" /> */} {/* スマホで写真の上に薄い黒背景をつける場合はこれを有効化 */}
+        <div className="absolute inset-0 bg-black/20 z-0 aspect-square md:hidden" />
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
@@ -101,6 +103,7 @@ export default function Home() {
               alt="iGEM Waseda Team Working" 
               fill 
               className="pb-4 md:pb-0"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
 
@@ -134,6 +137,7 @@ export default function Home() {
               alt="iGEM - Waseda Members" 
               fill 
               className="pb-4 md:pb-0 object-cover"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
 
@@ -177,6 +181,7 @@ export default function Home() {
               alt="iGEM - Waseda Won the Village Prize at iGEM 2024"
               fill
               className="object-cover object-center"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
         </div>
@@ -215,6 +220,7 @@ export default function Home() {
               alt="donation and sponsorship"
               fill
               className="object-cover object-center"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
           <div className="bg-[#0f0b08] hidden md:block relative h-full md:col-span-1" />

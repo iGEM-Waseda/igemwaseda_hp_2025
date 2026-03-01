@@ -18,6 +18,7 @@ export default function Contact() {
               alt="iGEM - Waseda logo"
               fill
               className="object-contain pr-8 md:pr-24"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
         </div>

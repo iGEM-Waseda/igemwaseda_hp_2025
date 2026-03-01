@@ -15,6 +15,7 @@ export default function Team() {
             alt="iGEM - Waseda logo"
             fill
             className="object-cover" 
+            sizes="(max-width: 768px) 300vw, 100vw"
           />
         </div>
 
@@ -52,7 +53,7 @@ export default function Team() {
         <p className="text whitespace-pre-wrap">
           {t('wet2')}
         </p>
-        <Image src="/wet.jpg" alt="wet" className="img" width={1792} height={1344} />
+        <Image src="/wet.jpg" alt="wet" className="img" width={1792} height={1344} sizes="(max-width: 768px) 300vw, 100vw"/>
 
         <h1 className="heading" id="dry">
           Dry
@@ -60,7 +61,7 @@ export default function Team() {
         <p className="text">
           {t('dry')}
         </p>
-        <Image src="/dry-simulation.png" alt="dry" className="img" width={1280} height={720} />
+        <Image src="/dry-simulation.png" alt="dry" className="img" width={1280} height={720} sizes="(max-width: 768px) 300vw, 100vw"/>
 
         <h1 className="heading" id="hp">
           Human Practice
@@ -68,7 +69,7 @@ export default function Team() {
         <p className="text">
           {t('hp')}
         </p>
-        <Image src="/human-practice.jpg" alt="hp" className="img" width={568} height={402} />
+        <Image src="/human-practice.jpg" alt="hp" className="img" width={568} height={402} sizes="(max-width: 768px) 300vw, 100vw"/>
 
         <h1 className="heading" id="other">
           Wiki・Video・Illustrator
@@ -85,7 +86,7 @@ export default function Team() {
         <p className="text whitespace-pre-wrap">
           {t('design')}
         </p>
-        <Image src="/design.png" alt="design" className="img" width={3572} height={1962} />
+        <Image src="/design.png" alt="design" className="img" width={3572} height={1962} sizes="(max-width: 768px) 300vw, 100vw"/>
 
         <h2 className="subheading">
           Video
@@ -108,7 +109,7 @@ export default function Team() {
         <p className="text">
           {t('illustrator')}
         </p>
-        <Image src="/illustrator.png" alt="illustrator" className="img" width={4312} height={2962} />
+        <Image src="/illustrator.png" alt="illustrator" className="img" width={4312} height={2962} sizes="(max-width: 768px) 300vw, 100vw"/>
 
       </section>
     </>

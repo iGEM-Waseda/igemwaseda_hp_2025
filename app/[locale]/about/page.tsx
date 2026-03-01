@@ -16,6 +16,7 @@ export default function About() {
               alt="iGEM - Waseda logoc"
               fill
               className="object-contain p-4 md:p-8"
+              sizes="(max-width: 768px) 300vw, 100vw"
             />
           </div>
           <div className="relative h-full" />
@@ -47,6 +48,7 @@ export default function About() {
           width={2256} 
           height={879} 
           className="img"
+          sizes="(max-width: 768px) 300vw, 100vw"
         />
         <p className="text">{t('synbio.section2')}</p>
         <p className="text">{t('synbio.section3')}</p>
@@ -59,6 +61,7 @@ export default function About() {
             width={382} 
             height={261} 
             className="h-[1.3em] w-auto object-contain" 
+            sizes="(max-width: 768px) 300vw, 100vw"
           />
         </div>
         <p className="text">{t('igem')}</p>
@@ -71,6 +74,7 @@ export default function About() {
             width={1829} 
             height={1859} 
             className="h-[1.3em] w-auto object-contain" 
+            sizes="(max-width: 768px) 300vw, 100vw"
           />
         </div>
         <p className="text">{t('igemwaseda')}</p>
