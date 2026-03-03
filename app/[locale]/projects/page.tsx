@@ -7,16 +7,16 @@ export default function Projects() {
   const t = useTranslations('projects');
   return (
     <>
-      <div className="mt-[76px] xl:mt-[92px]" /> {/* ヘッダー分だけ下げる */}
+      <div className="mt-[32px]" /> {/* ヘッダー分だけ下げる */}
 
       <section className="w-full relative bg-black grid grid-cols-3 aspect-[3/1]">
         <div className="relative h-full col-span-1" />
         <div className="relative w-full col-span-2 overflow-hidden">
-          <Image 
+          <Image
             src="/project-hero-image.jpg"
             alt="iGEM - Waseda logo"
             fill
-            className="object-cover" 
+            className="object-cover"
             sizes="(max-width: 768px) 300vw, 100vw"
           />
         </div>
@@ -25,7 +25,7 @@ export default function Projects() {
 
         <div className="absolute inset-0 z-30 grid grid-cols-2 px-8 py-4 md:px-24">
           <div className="flex flex-col justify-center">
-            <h3 
+            <h3
               className="font-heading-en font-black text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-yellow"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
