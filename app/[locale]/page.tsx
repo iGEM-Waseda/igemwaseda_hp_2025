@@ -229,7 +229,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/65 z-0 hidden md:block" />
 
         <div className="md:absolute inset-0 z-30 grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:col-start-2">
+          <div className="flex flex-col justify-center px-8 py-4 md:px-16 xl:px-24 aspect-square md:col-start-2">
             <div className="mb-8">
               <h3 
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
