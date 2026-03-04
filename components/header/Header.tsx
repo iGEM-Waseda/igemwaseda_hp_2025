@@ -13,13 +13,14 @@ export default function Header() {
       <nav className="bg-white sticky top-0 z-50 shadow-md">
         <div className="max-w-screen-2xl pl-4 xl:pl-8 pr-8 mx-auto">
           <div className="flex justify-between items-center py-2 xl:py-4">
-            <div className="h-8 w-[240px] relative">
-              <Link href="/">
+            <div className="h-8 w-fit relative">
+              <Link href="/" className="block h-full">
                 <Image
                   src="/iGEM-Waseda_home_logo.png"
                   alt="iGEM - Waseda Logo"
-                  fill // 親要素いっぱいに広げる
-                  className="object-contain object-left scale-[1.6] origin-left"
+                  width={750}
+                  height={183}
+                  className="h-full w-auto object-contain scale-[1.3] xl:scale-[1.6] origin-left"
                 />
               </Link>
             </div>
