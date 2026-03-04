@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { roboto, notoJP } from "@/lib/fonts";
+import { notoJP } from "@/lib/fonts";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from "next-intl/server";
@@ -34,12 +34,9 @@ export default async function LocaleLayout({ children, params }: {
   // 言語ファイルの読み込み
   const messages = await getMessages();
 
-  const bodyFont = locale === 'ja' ? notoJP.className : notoJP.className; // とりあえず英語の本文もNotoにしておく
-  // console.log(`Locale: ${locale}, Body Font: ${bodyFont}`);
-
   return (
     <html lang={locale} style={{ colorScheme: 'light' }}>
-      <body className={`${bodyFont} bg-white`}>
+      <body className={`${notoJP.className} bg-white`}>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header/>
             <main>
