@@ -7,8 +7,8 @@ export default function Contact() {
   const t = useTranslations('contact');
   return (
     <>
-      <div className="mt-[32px]" /> {/* ヘッダー分だけ下げる */}
-
+      <div className="mt-[48px] xl:mt-[64px]" /> {/* ヘッダー分だけ下げる */}
+      
       <section className="w-full relative">
         <div className="w-full grid grid-cols-2 aspect-[3/1] overflow-hidden">
           <div className="relative h-full" />

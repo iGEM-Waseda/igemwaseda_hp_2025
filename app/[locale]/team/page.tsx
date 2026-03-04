@@ -6,7 +6,7 @@ export default function Team() {
   const t = useTranslations('team');
   return (
     <>
-      <div className="mt-[32px]" /> {/* ヘッダー分だけ下げる */}
+      <div className="mt-[48px] xl:mt-[64px]" /> {/* ヘッダー分だけ下げる */}
 
       <section className="w-full relative">
         <div className="relative w-full aspect-[3/1] overflow-hidden">

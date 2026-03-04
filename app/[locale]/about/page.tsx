@@ -6,7 +6,7 @@ export default function About() {
   const t = useTranslations('about');
   return (
     <>
-      <div className="mt-[55px]" /> {/* ヘッダー分だけ下げる*/}
+      <div className="mt-[48px] xl:mt-[64px]" /> {/* ヘッダー分だけ下げる */}
 
       <section className="w-full relative">
         <div className="w-full grid grid-cols-2 aspect-[3/1] overflow-hidden">
