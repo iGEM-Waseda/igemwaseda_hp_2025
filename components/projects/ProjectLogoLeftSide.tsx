@@ -37,7 +37,7 @@ export default function ProjectLogoLeftSide({ children, year, bgColor, projectTi
             <div className="flex flex-wrap justify-center gap-4 w-full">
               {PrizesBadgeArray && PrizesBadgeArray.map((prize, index) => (
                 <div key={index} className="relative w-1/10 aspect-square">
-                  <Image src={prize.prizeIconSrc} alt={prize.prizeName} fill className="object-contain" />
+                  <Image src={prize.prizeIconSrc} alt={prize.prizeName} fill className="object-contain" sizes="(max-width: 768px) 300vw, 100vw"/>
                 </div>
               ))}
             </div>
