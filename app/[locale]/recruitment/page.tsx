@@ -1,58 +1,61 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect, useCallback } from 'react';
+// 新歓期間のみコメントを外す
+// import { useState, useEffect, useCallback } from 'react';
 import { useTranslations, useLocale } from "next-intl";
 import '@/app/globals.css'
 
-const flyers = [
-  { src: '/flyer-1.jpg', alt: 'Recruiting Flyer 1' },
-  { src: '/flyer-2.jpg', alt: 'Recruiting Flyer 2' },
-];
+// 新歓期間のみコメントを外す
+// const flyers = [
+//   { src: '/flyer-1.jpg', alt: 'Recruiting Flyer 1' },
+//   { src: '/flyer-2.jpg', alt: 'Recruiting Flyer 2' },
+// ];
 
 export default function Recruitment() {
   const t = useTranslations('recruitment');
   const locale = useLocale();
   const qaList = t.raw('qa') as { question: string; answer: string }[];
 
+  // 新歓期間のみコメントを外す
   // チラシをクリックしたら浮かび上がるようにするためのコード(Geminiに丸投げ)
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (index: number) => {
-    setCurrentIndex(index);
-    setIsOpen(true);
-  };
+  // const openModal = (index: number) => {
+  //   setCurrentIndex(index);
+  //   setIsOpen(true);
+  // };
 
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsOpen(false);
+  // };
 
-  const prevImage = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + flyers.length) % flyers.length);
-  }, []);
+  // const prevImage = useCallback(() => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + flyers.length) % flyers.length);
+  // }, []);
 
-  const nextImage = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % flyers.length);
-  }, []);
+  // const nextImage = useCallback(() => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % flyers.length);
+  // }, []);
 
-  useEffect(() => {
-    if (!isOpen) return;
+  // useEffect(() => {
+  //   if (!isOpen) return;
 
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeModal();
-      if (e.key === 'ArrowLeft') prevImage();
-      if (e.key === 'ArrowRight') nextImage();
-    };
+  //   const handleKeyDown = (e: KeyboardEvent) => {
+  //     if (e.key === 'Escape') closeModal();
+  //     if (e.key === 'ArrowLeft') prevImage();
+  //     if (e.key === 'ArrowRight') nextImage();
+  //   };
 
-    window.addEventListener('keydown', handleKeyDown);
-    document.body.style.overflow = 'hidden';
+  //   window.addEventListener('keydown', handleKeyDown);
+  //   document.body.style.overflow = 'hidden';
 
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = '';
-    };
-  }, [isOpen, prevImage, nextImage]);
+  //   return () => {
+  //     window.removeEventListener('keydown', handleKeyDown);
+  //     document.body.style.overflow = '';
+  //   };
+  // }, [isOpen, prevImage, nextImage]);
 
   return (
     <>
@@ -93,6 +96,7 @@ export default function Recruitment() {
           {t('intro')}
         </p>
 
+        {/* 幹事長のお言葉 */}
         <div className="mx-auto px-4 py-4 md:px-0 grid grid-cols-1 md:grid-cols-4">
           <div className="pb-6 md:pb-0 md:col-span-1 flex flex-col items-center justify-center">
             <Image
@@ -117,12 +121,13 @@ export default function Recruitment() {
           </div>
         </div>
 
-        <h1 className="heading">
+        {/* 新歓チラシ(新歓期間のみコメントを外す) */}
+        {/* <h1 className="heading">
           {t('flyer')}
-        </h1>
+        </h1> */}
 
-        {/* 新歓チラシ(コードはGeminiに丸投げ) */}
-        <div className="flex items-center justify-center gap-4 mb-8">
+        {/* 新歓チラシ(コードはGeminiに丸投げ、新歓期間のみコメントを外す) */}
+        {/* <div className="flex items-center justify-center gap-4 mb-8">
           {flyers.map((flyer, index) => (
             <div 
               key={index} 
@@ -199,8 +204,9 @@ export default function Recruitment() {
           @keyframes zoomIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
           .animate-fadeIn { animation: fadeIn 0.3s ease-out; }
           .animate-zoomIn { animation: zoomIn 0.3s ease-out; }
-        `}</style>
+        `}</style> */}
 
+        {/* Q&Aセクション */}
         <h1 className="heading">
           Q & A
         </h1>
