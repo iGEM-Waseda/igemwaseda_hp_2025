@@ -53,7 +53,7 @@ export default function Contact() {
             </h3>
             <div className="flex items-center justify-center gap-4">
               <MailButton textColor="text-gray-800" hoverColor="hover:text-yellow" />
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-800">
+              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-800 font-medium">
                 igemwaseda2020@gmail.com
               </p>
             </div>
