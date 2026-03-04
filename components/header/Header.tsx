@@ -13,13 +13,13 @@ export default function Header() {
       <nav className="bg-white sticky top-0 z-50 shadow-md">
         <div className="max-w-screen-2xl pl-4 xl:pl-8 pr-8 mx-auto">
           <div className="flex justify-between items-center py-2 xl:py-4">
-            <div className="h-15 w-[240px] overflow-hidden relative pt-1">
+            <div className="h-8 w-[240px] relative">
               <Link href="/">
                 <Image
                   src="/iGEM-Waseda_home_logo.png"
                   alt="iGEM - Waseda Logo"
                   fill // 親要素いっぱいに広げる
-                  className="object-cover object-center" // 上下左右を中央合わせでトリミング
+                  className="object-contain object-left scale-[1.6] origin-left"
                 />
               </Link>
             </div>

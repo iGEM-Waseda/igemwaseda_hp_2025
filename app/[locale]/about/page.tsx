@@ -6,12 +6,12 @@ export default function About() {
   const t = useTranslations('about');
   return (
     <>
-      <div className="mt-[76px] xl:mt-[92px]" /> {/* ヘッダー分だけ下げる */}
+      <div className="mt-[55px]" /> {/* ヘッダー分だけ下げる*/}
 
-      <section className="w-full relative"> 
+      <section className="w-full relative">
         <div className="w-full grid grid-cols-2 aspect-[3/1] overflow-hidden">
           <div className="relative h-full">
-            <Image 
+            <Image
               src="/iGEM-Waseda_logo_trim.png"
               alt="iGEM - Waseda logoc"
               fill
@@ -26,7 +26,7 @@ export default function About() {
 
         <div className="absolute inset-0 z-30 grid grid-cols-2">
           <div className="flex flex-col justify-center col-start-2">
-            <h3 
+            <h3
               className="font-heading-en font-black text-2xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-white"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
@@ -42,11 +42,11 @@ export default function About() {
       <section className="section">
         <h1 className="heading">{t('heading.synbio')}</h1>
         <p className="text">{t('synbio.section1')}</p>
-        <Image 
-          src='/about-synbio.png' 
-          alt="about synthetic biology" 
-          width={2256} 
-          height={879} 
+        <Image
+          src='/about-synbio.png'
+          alt="about synthetic biology"
+          width={2256}
+          height={879}
           className="img"
           sizes="(max-width: 768px) 300vw, 100vw"
         />
@@ -55,12 +55,12 @@ export default function About() {
 
         <div className="heading flex items-center gap-2 lg:gap-3">
           <h1>{t('heading.igem')}</h1>
-          <Image 
-            src='/igem_logo.png' 
-            alt="igem logo" 
-            width={382} 
-            height={261} 
-            className="h-[1.3em] w-auto object-contain" 
+          <Image
+            src='/igem_logo.png'
+            alt="igem logo"
+            width={382}
+            height={261}
+            className="h-[1.3em] w-auto object-contain"
             sizes="(max-width: 768px) 300vw, 100vw"
           />
         </div>
@@ -68,12 +68,12 @@ export default function About() {
 
         <div className="heading flex items-center gap-2 lg:gap-3">
           <h1>{t('heading.igemwaseda')}</h1>
-          <Image 
-            src='/iGEM-Waseda_logo_trim.png' 
-            alt="igem logo" 
-            width={1829} 
-            height={1859} 
-            className="h-[1.3em] w-auto object-contain" 
+          <Image
+            src='/iGEM-Waseda_logo_trim.png'
+            alt="igem logo"
+            width={1829}
+            height={1859}
+            className="h-[1.3em] w-auto object-contain"
             sizes="(max-width: 768px) 300vw, 100vw"
           />
         </div>
