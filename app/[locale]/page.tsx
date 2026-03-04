@@ -178,7 +178,7 @@ export default function Home() {
           <div className="relative aspect-square md:aspect-auto h-full">
             <Image 
               src="/recruiting-hero-image.jpg"
-              alt="iGEM - Waseda Won the Village Prize at iGEM 2024"
+              alt="iGEM Jamboree 2024"
               fill
               className="object-cover object-center"
               sizes="(max-width: 768px) 300vw, 100vw"
