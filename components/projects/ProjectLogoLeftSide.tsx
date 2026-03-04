@@ -1,6 +1,6 @@
 import Image from "next/image"
 import JumpToWiki from "@/components/projects/JumpToWiki"
-import { PrizesBadgeProps } from "@/components/types"
+import { PrizesBadgeProps } from "@/lib/types"
 
 export default function ProjectLogoLeftSide({ children, year, bgColor, projectTitle, ProjectTitleColor, PrizesBadgeArray }: {
    children: React.ReactNode, 

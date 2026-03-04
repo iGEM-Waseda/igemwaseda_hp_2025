@@ -2,7 +2,7 @@ import Image from "next/image";
 import ProjectLogoLeftSide from "@/components/projects/ProjectLogoLeftSide";
 import ProjectLogoRightSide from "@/components/projects/ProjectLogoRightSide";
 import { useTranslations } from "next-intl";
-import { PrizesBadgeProps } from "@/components/types"
+import { PrizesBadgeProps } from "@/lib/types"
 
 export default function Projects() {
   const t = useTranslations('projects');
