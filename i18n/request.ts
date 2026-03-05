@@ -19,6 +19,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       projects: (await import(`@/messages/${locale}/projects.json`)).default,
       team: (await import(`@/messages/${locale}/team.json`)).default,
       recruitment: (await import(`@/messages/${locale}/recruitment.json`)).default,
+      donation: (await import(`@/messages/${locale}/donation.json`)).default,
       contact: (await import(`@/messages/${locale}/contact.json`)).default
     }
   };
