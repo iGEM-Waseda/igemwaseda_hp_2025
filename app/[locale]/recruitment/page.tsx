@@ -104,7 +104,7 @@ export default function Recruitment() {
               alt="Masahiro Chiba"
               width={867}
               height={951}
-              className="aspect-square object-cover object-center px-4 md:px-0" // 正方形にカット
+              className="aspect-square object-cover object-center px-4 md:px-0" // md以上で正方形にカット
               sizes="(max-width: 768px) 300vw, 100vw"
             />
             <p className={`py-4 text-center ${locale === "ja" ? "text-sm lg:text-base" : "text-xs lg:text-sm"} font-medium text-gray-500 whitespace-pre-wrap`}>
