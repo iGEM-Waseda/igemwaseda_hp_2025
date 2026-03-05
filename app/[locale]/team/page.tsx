@@ -20,6 +20,7 @@ export default function Team() {
         </div>
 
         {/* <div className="absolute inset-0 bg-black/60 z-0" /> */} {/* 黒くしない */}
+        <div className="absolute inset-0 bg-white/30 z-0" />
 
         <div className="absolute inset-0 z-30 grid grid-cols-2 px-8 py-4 md:px-24">
           <div className="flex flex-col justify-center">
