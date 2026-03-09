@@ -7,6 +7,7 @@ import { useTranslations, useLocale } from "next-intl";
 import '@/app/globals.css'
 
 // 新歓期間のみコメントを外す
+// 新歓の度にチラシを変える
 // const flyers = [
 //   { src: '/flyer-1.jpg', alt: 'Recruiting Flyer 1' },
 //   { src: '/flyer-2.jpg', alt: 'Recruiting Flyer 2' },
@@ -92,9 +93,9 @@ export default function Recruitment() {
       </section>
 
       <section className="section">
-        <p className="text">
+        {/* <p className="text">
           {t('intro')}
-        </p>
+        </p> */}
 
         {/* 幹事長のお言葉 */}
         <div className="mx-auto px-4 py-4 md:px-0 grid grid-cols-1 md:grid-cols-4">
