@@ -19,7 +19,7 @@ export default function Recruitment() {
   const qaList = t.raw('qa') as { question: string; answer: string }[];
 
   // 新歓期間のみコメントを外す
-  // チラシをクリックしたら浮かび上がるようにするためのコード(Geminiに丸投げ)
+  // // チラシをクリックしたら浮かび上がるようにするためのコード(Geminiに丸投げ)
   // const [isOpen, setIsOpen] = useState(false);
   // const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -152,10 +152,10 @@ export default function Recruitment() {
             className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
             onClick={closeModal} 
           >
-            <div className="absolute inset-0 bg-black/90 animate-fadeIn" />
+            <div className="absolute inset-0 bg-black/90 animate-fade-in" />
 
             <div 
-              className="relative max-w-7xl max-h-[90vh] flex items-center justify-center animate-zoomIn"
+              className="relative max-w-7xl max-h-[90vh] flex items-center justify-center animate-zoom-in"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -198,14 +198,7 @@ export default function Recruitment() {
 
             </div>
           </div>
-        )}
-
-        <style jsx global>{`
-          @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-          @keyframes zoomIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
-          .animate-fadeIn { animation: fadeIn 0.3s ease-out; }
-          .animate-zoomIn { animation: zoomIn 0.3s ease-out; }
-        `}</style> */}
+        )} */}
 
         {/* Q&Aセクション */}
         <h1 className="heading">

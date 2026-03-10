@@ -7,6 +7,33 @@
   --background: #ffffff;
 }
 
+@theme {
+  /* 1. アニメーションを定義（--animate-〇〇 という名前にします） */
+  --animate-fade-in: fade-in 0.3s ease-out;
+  --animate-zoom-in: zoom-in 0.3s ease-out;
+
+  /* 2. キーフレームの動きを定義 */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --variant-dark: .dark &;
