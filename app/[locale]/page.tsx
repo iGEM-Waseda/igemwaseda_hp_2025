@@ -133,7 +133,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="md:hidden relative aspect-square">
             <Image 
-              src="/home-hero-image.jpg" 
+              src="/members_hero_image.JPG" 
               alt="iGEM - Waseda Members" 
               fill 
               className="object-cover"
@@ -150,7 +150,7 @@ export default function Home() {
                 Members
               </h3>
               <p className="text-lg md:text-xl lg:text-1.5xl xl:text-2xl 2xl:text-[1.5vw] font-bold tracking-widest text-enji-text">
-                メンバー(写真は今年度のものに置き換えたい)
+                メンバー
               </p>
             </div>
 
@@ -163,7 +163,7 @@ export default function Home() {
 
           <div className="hidden md:block relative w-full aspect-square">
             <Image 
-              src="/home-hero-image.jpg"
+              src="/members_hero_image.JPG"
               alt="iGEM - Waseda Members" 
               fill 
               className="object-cover"
