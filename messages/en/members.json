@@ -4,154 +4,154 @@
   "team": "Team",
   "shietsuKo": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科4年",
     "highSchool": "安田学園高校",
     "hobbies": "ミツバチの飼育と観察/読書/散歩/ゲーム/論文を読むことetc",
     "message": "実験がんばります！"
   },
   "daisukeKondo": {
     "role": "Wet / HP",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科4年",
     "highSchool": "早稲田大学高等学院",
     "hobbies": "スポーツ観戦/百貨店めぐり",
     "message": "ただ好きなことを研究して終わりではなく、社会実装までを考えて発表することにとても惹かれました！頑張ります！"
   },
   "shihoMaeda": {
     "role": "Wet",
-    "department": "先進理工学部 化学・生命化学科",
+    "department": "先進理工学部 化学・生命化学科4年",
     "highSchool": "渋谷教育学園渋谷高校",
     "hobbies": "音楽/美術館巡り/読書",
     "message": "学び続けて合成生物学で世界を目指します！"
   },
   "junKawabata": {
-    "role": "Dry",
-    "department": "人間科学部 人間情報科学科",
+    "role": "Dry / HP",
+    "department": "人間科学部 人間情報科学科4年",
     "highSchool": "早稲田渋谷シンガポール校",
     "hobbies": "語学/読書/プログラミング/鉄道",
     "message": "バイオインフォマティックスの分野で頑張っていきます。よろしくお願いします。"
   },
   "itsukiTogawa": {
     "role": "Dry",
-    "department": "先進理工学部 電気・情報生命工学科",
+    "department": "先進理工学部 電気・情報生命工学科4年",
     "highSchool": "薬園台高校",
     "hobbies": "音楽を聞く/ゲーム",
     "message": "数学と生物という、やりたかったことをやれる事になって嬉しいです。頑張ります！"
   },
   "yutoToriyama": {
     "role": "Dry / Wiki",
-    "department": "基幹理工学部 情報通信学科",
+    "department": "基幹理工学部 情報通信学科4年",
     "highSchool": "早稲田大学系属早稲田実業学校高等部",
     "hobbies": "旅行/鉄道/昔の曲を聴く",
     "message": "生物×プログラミングという言葉に惹かれて入会しました。世界に通用する早稲田を目指して頑張ります！"
   },
   "masahiroChiba": {
     "role": "幹事長 / Wet / HP",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科3年",
     "highSchool": "都立日比谷高校",
     "hobbies": "テニス/ポケモン/ギター",
     "message": "合成生物学の力で早稲田から世界に貢献します！"
   },
   "harukiKimura": {
     "role": "副幹事長 / Wet / HP",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科3年",
     "highSchool": "土浦日本大学高等学校",
     "hobbies": "食べ歩き/服/写真",
     "message": "不屈の探究心で、世界に通用するプロジェクトを作り上げます！"
   },
   "keigoMarubashi": {
     "role": "会計 / HP",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科3年",
     "highSchool": "西大和学園",
     "hobbies": "野球観戦",
     "message": "チームの力になれるように頑張ります！"
   },
   "taitoHoriuchi": {
     "role": "Wet",
-    "department": "先進理工学部 化学・生命化学科",
+    "department": "先進理工学部 化学・生命化学科3年",
     "highSchool": "横浜翠嵐高校",
     "hobbies": "ジャズ/サックス",
     "message": "iGEMに参加した高校のOBの方のお話を聴き興味を持ち、参加しました。全力で頑張ります！"
   },
   "taikiMori": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科3年",
     "highSchool": "東京都市大学付属高校",
     "hobbies": "ギター/読書",
     "message": "世界一を目指して尽力していきます"
   },
   "naoIshida": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "早稲田大学高等学院",
     "hobbies": "釣り",
     "message": "生物の可能性を知りたいです！"
   },
   "manakaSaito": {
     "role": "Wet / HP",
-    "department": "教育学部 理学科 生物学専修",
+    "department": "教育学部 理学科 生物学専修2年",
     "highSchool": "大妻多摩高等学校",
     "hobbies": "音楽（Eve、ヨルシカ、ずとまよ）を聴くこと",
     "message": "分野を限らず生物学を極めていきたいです！頑張ります！"
   },
   "tomohiroSegawa": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "早稲田大学系属早稲田佐賀高校",
     "hobbies": "旅行/食べれる植物を調べること",
     "message": "化学と生物が好きでこの二つの学問を取り深く知りたいと思って入会しました。"
   },
   "chiakiNaito": {
     "role": "Wet / HP",
-    "department": "先進理工学部 電気・情報生命工学科",
+    "department": "先進理工学部 電気・情報生命工学科2年",
     "highSchool": "早稲田大学本庄高等学院",
     "hobbies": "ハリーポッターを観る",
     "message": "いつでもわくわくを忘れずに、世界に挑戦します！"
   },
   "sotaNagase": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "島根県立松江北高等学校",
     "hobbies": "音楽",
     "message": "生物への愛をもっと深めます！"
   },
   "yoriNagase": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "神戸女学院高等学部",
     "hobbies": "読書",
     "message": "しっかり学んで、チームに貢献できるように頑張ります！"
   },
   "eitoYamada": {
     "role": "Wet / HP",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "早稲田大学系属早稲田実業学校高等部",
     "hobbies": "筋トレ/ボルダリング",
     "message": "パッションで世界を目指します！"
   },
   "akiYamamoto": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "開成高校",
     "hobbies": "音楽/読書",
     "message": "合成生物学の知見を深めます！"
   },
   "shokoAoyama": {
     "role": "Dry",
-    "department": "基幹理工学部 学系3",
+    "department": "基幹理工学部 情報通信学科2年",
     "highSchool": "早稲田渋谷シンガポール校",
     "hobbies": "音楽/珈琲",
     "message": "情報技術の持つ可能性を探求し、チームの一員として力になれるよう全力を尽くします！"
   },
   "tomokiAbukawa": {
     "role": "Dry",
-    "department": "先進理工学部 応用化学科",
+    "department": "先進理工学部 応用化学科2年",
     "highSchool": "千葉県立船橋高等学校",
     "hobbies": "芸術鑑賞/美味しいものを食べること",
     "message": "化学で研究に貢献できるよう頑張ります"
   },
   "karenKaito": {
-    "role": "Dry / Design",
-    "department": "基幹理工学部 情報理工学科",
+    "role": "Dry / Design / HP",
+    "department": "基幹理工学部 情報理工学科2年",
     "highSchool": "早稲田大学系属早稲田実業学校高等部",
     "hobbies": "絵/音楽/読書/映画",
     "message": "生物も情報も好きなので、好きを糧に実直に学んで行きたいです！"
@@ -165,87 +165,54 @@
   },
   "takumaTashiro": {
     "role": "Dry",
-    "department": "先進理工学部 生命医科学科",
+    "department": "先進理工学部 生命医科学科2年",
     "highSchool": "海城高等学校",
     "hobbies": "走ること",
     "message": "情報技術を学び、生物を探求します！チームに貢献できるよう、頑張ります！"
   },
   "ryojunHayashizaki": {
     "role": "Wet / HP",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "早稲田大学高等学院",
-    "hobbies": "合成生物学/スキューバダイビング/水球/マクドナルド/珈琲/カフェ巡り/麻雀/星野源の音楽を聴くこと",
-    "message": "生物学の可能性を広げたい！その一心で研究とチームマネジメントに邁進します。さあ、早稲田から世界へ。"
+    "department": "先進理工学研究科 生命医科学専攻2年"
   },
   "ayakaSasaki": {
     "role": "Dry / Wet",
-    "department": "奈良県立医科大学 医学部医学科",
-    "highSchool": "早稲田大学本庄高等学院",
-    "hobbies": "クラッシック音楽/キーボード/研究",
-    "message": "Modelingで成果を出せるように頑張ります( ´͈ ᵕ ' )و"
+    "department": "奈良県立医科大学 医学部医学科4年"
   },
   "seiTsukamura": {
     "role": "Dry / Wet",
-    "department": "先進理工学部 化学・生命化学科",
-    "highSchool": "横浜翠嵐高校",
-    "hobbies": "周期表/空手/小説執筆",
-    "message": "生命の最小単位を探る合成生物学に惹かれました。良い成果が得られるよう、人事を尽くします。"
+    "department": "先進理工学研究科 化学・生命化学専攻2年"
   },
   "shotaYamamoto": {
     "role": "Dry / Wiki",
-    "department": "基幹理工学部 情報理工学科",
-    "highSchool": "早稲田大学高等学院",
-    "hobbies": "美術館に行く",
-    "message": "プログラミングちょっとできる、生物ナンモワカラン"
+    "department": "基幹理工学研究科 情報理工・情報通信専攻2年"
   },
   "ryutaroAonuma": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "麻布高校",
-    "hobbies": "生物採集/スキンダイビング/登山/スキー/邦ロック",
-    "message": "マクロからミクロまで、生物に関すること全てに興味があります。海と生物への愛で世界を変えたい！"
+    "department": "先進理工学研究科 生命医科学専攻1年"
   },
   "harukaNakamura": {
     "role": "Wet / Video",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "東洋英和女学院",
-    "hobbies": "運動/睡眠/音楽/糖分",
-    "message": "EducationとWet頑張ります！！"
+    "department": "奈良県立医科大学 医学部医学科3年"
   },
   "wakanaNamba": {
     "role": "Wet",
-    "department": "先進理工学部 化学・生命化学科",
-    "highSchool": "愛知県立明和高等学校",
-    "hobbies": "海外旅行/食/笑うこと/笑わせること",
-    "message": "夢は、世界一周とiGEMで世界をとることです。どっちも叶えたい！"
+    "department": "先進理工学研究科 化学・生命化学専攻1年"
   },
   "hannaWatanabe": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "開智高校",
-    "hobbies": "料理/旅行",
-    "message": "いろんなことに興味があります！どんどん吸収していきたいです！"
+    "department": "先進理工学研究科 生命医科学専攻1年"
   },
   "ryotoMiyamoto": {
     "role": "Dry / Wiki",
-    "department": "基幹理工学部 情報理工学科",
-    "highSchool": "早稲田大学高等学院",
-    "hobbies": "スノーボード/バイク/コンピュータ",
-    "message": "コンピュータの応用として興味があったので入りました！頑張ります。"
+    "department": "基幹理工学研究科 情報理工・情報通信専攻1年"
   },
   "joYokobori": {
     "role": "Dry",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "早稲田大学高等学院",
-    "hobbies": "鉄道/旅行/クラリネット",
-    "message": "生物の可能性は無限大！と思って活動していきたいです！"
+    "department": "先進理工学研究科 生命医科学専攻1年"
   },
   "vicky": {
     "role": "HP",
-    "department": "Major in Physics",
-    "highSchool": "清泉インターナショナルスクール",
-    "hobbies": "ケーキ作り/インスタグラム更新/音楽鑑賞（King Gnu、Kroi、洋楽ロック）",
-    "message": "合成生物学の可能性に惹かれました！今後世の中にとって必要になるものを形作れるように、頑張ります！"
+    "department": "Major in Physics"
   },
   "toruAsahi": {
     "role": "Principal Investigator",
@@ -257,30 +224,18 @@
   },
   "ryotaAbe": {
     "role": "Wet",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "武蔵高校",
-    "hobbies": "サッカー/格闘技観戦/漫画",
-    "message": "有り余った体力を活かしてチームで世界に羽ばたきたいです！"
+    "department": "先進理工学部 生命医科学科4年"
   },
   "tomoyoHanda": {
     "role": "Design",
-    "department": "先進理工学部 生命医科学科",
-    "highSchool": "土浦一高",
-    "hobbies": "散歩/コーヒー/絵",
-    "message": "自分たちで新しく生み出すことが最大の魅力だと感じています。力になれるよう、ベストを尽くします！"
+    "department": "先進理工学部 生命医科学科4年"
   },
   "juriKawazu": {
     "role": "HP",
-    "department": "国際教養学部",
-    "highSchool": "広尾学園",
-    "hobbies": "猫と遊ぶこと/踊ること",
-    "message": "合成生物学という学問、研究の社会実装を目指すこと、チームで世界を目指すことのすべてに魅力を感じました！全力で頑張ります！"
+    "department": "南洋理工大学"
   },
   "chiharuSeida": {
     "role": "Wet",
-    "department": "先進理工学部 電気・情報生命工学科",
-    "highSchool": "島根県立松江北高等学校",
-    "hobbies": "テニス/野球観戦/美味しいものを食べる",
-    "message": "合成生物学やバイオインフォマティクスに魅力を感じ、入会しました。たくさんのことを学びながら全力で頑張ります！"
+    "department": "先進理工学部 電気・情報生命工学科3年"
   }
 }
