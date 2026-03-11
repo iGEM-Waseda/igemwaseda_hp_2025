@@ -101,7 +101,7 @@ export default function Recruitment() {
         <div className="mx-auto px-4 py-4 md:px-0 grid grid-cols-1 md:grid-cols-4">
           <div className="pb-6 md:pb-0 md:col-span-1 flex flex-col items-center justify-center">
             <Image
-              src="/masahiro-chiba.png"
+              src="/members/masahiro-chiba.png"
               alt="Masahiro Chiba"
               width={867}
               height={951}
