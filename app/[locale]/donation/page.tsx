@@ -1,10 +1,14 @@
+'use client';
+
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import JumpToDonationSectionById from '@/components/donation/JumpToDonationSectionById';
 import MailButton from "@/components/MailButton";
 
 export default function Donation() {
   const t = useTranslations('donation');
+  const locale = useLocale();
+
   return (
     <>
       <div className="mt-[48px] xl:mt-[64px]" /> {/* ヘッダー分だけ下げる */}
@@ -66,6 +70,7 @@ export default function Donation() {
         <JumpToDonationSectionById id="corporations">
           {t('sectionCorporations')}
         </JumpToDonationSectionById>
+        {locale === "ja" ? <Image src="/donation_graph.png" alt="donation graph" width={1336} height={412} className="w-full" /> : <Image src="/donation_graph_en.png" alt="donation graph" width={1336} height={412} className="w-full" />}
 
         <h1 className="heading" id="individuals">
           {t('individuals')}
@@ -73,12 +78,11 @@ export default function Donation() {
         <p className="text">
           {t('return')}
         </p>
+        {locale === "ja" ? <Image src="/donation_chart.png" alt="donation graph" width={1223} height={304} className="w-full" /> : <Image src="/donation_chart_en.png" alt="donation graph" width={1336} height={412} className="w-full" />}
         <h2 className="subheading">
           {t('flow')}
         </h2>
-        <p className="text font-bold whitespace-pre-wrap">
-          {t('step')}
-        </p>
+        {locale === "ja" ? <Image src="/steps.png" alt="donation graph" width={1336} height={307} className="w-full" /> : <Image src="/steps_en.png" alt="donation graph" width={1336} height={307} className="w-full" />}
         <div className="flex justify-center mt-auto mx-auto">
           <a href="https://forms.gle/Wm4VeKUBuEL9zcQz7" target="_blank" className="mt-2 md:mt-6 inline-block bg-[#5a131d] focus-visible:ring text-white hover:text-yellow active:text-yellow text-sm sm:text-lg md:text-2xl font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
             {t('googleForm')}
