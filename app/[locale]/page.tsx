@@ -15,21 +15,24 @@ export default function Home() {
 
       {/* ここにニュースを挿入 */}
 
-      <section className="w-full bg-white"> {/* About Us */}
+      <section className="w-full bg-white relative z-30"> {/* About Us */}
         <div className="grid grid-cols-1 md:grid-cols-2"> {/* PCではロゴとテキストを横並び、スマホではロゴをテキストの上に配置 */}
-          <div className="relative aspect-square absolute md:bottom-[-50px] xl:bottom-[-75px] z-30">
-            <Image 
-              src="/iGEM-Waseda_logo_trim.png" 
-              alt="iGEM - Waseda Team Logo" 
-              fill 
-              className="p-4"
-              sizes="(max-width: 768px) 300vw, 100vw"
-            />
+          <div className="relative aspect-square md:aspect-[4/3]">
+            <div className="absolute inset-[-10%] md:inset-[-15%] xl:inset-[-20%] z-30">
+              <Image
+                src="/iGEM-Waseda_logo_trim.png"
+                alt="iGEM - Waseda Team Logo"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 300vw, 100vw"
+                priority
+              />
+            </div>
           </div>
 
-          <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square">
+          <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[4/3]">
             <div className="mb-8">
-              <h3 
+              <h3
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
@@ -75,7 +78,7 @@ export default function Home() {
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
-            <h3 
+            <h3
               className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
@@ -90,7 +93,7 @@ export default function Home() {
             {t('home.projects')}
           </p>
 
-          <LearnMore href={pages[1].href} textColor="text-gray-900 md:text-white"/>
+          <LearnMore href={pages[1].href} textColor="text-gray-900 md:text-white" />
         </div>
 
       </section>
@@ -98,10 +101,10 @@ export default function Home() {
       <section className="w-full bg-white"> {/* Team */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative aspect-square">
-            <Image 
-              src="/team-hero-image.png" 
-              alt="iGEM Waseda Team Working" 
-              fill 
+            <Image
+              src="/team-hero-image.png"
+              alt="iGEM Waseda Team Working"
+              fill
               className=""
               sizes="(max-width: 768px) 300vw, 100vw"
             />
@@ -109,7 +112,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square">
             <div className="mb-8">
-              <h3 
+              <h3
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
@@ -132,10 +135,10 @@ export default function Home() {
       <section className="w-full bg-white"> {/* Members */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="md:hidden relative aspect-square">
-            <Image 
-              src="/members_hero_image.JPG" 
-              alt="iGEM - Waseda Members" 
-              fill 
+            <Image
+              src="/members_hero_image.JPG"
+              alt="iGEM - Waseda Members"
+              fill
               className="object-cover"
               sizes="(max-width: 768px) 300vw, 100vw"
             />
@@ -143,7 +146,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square">
             <div className="mb-8">
-              <h3 
+              <h3
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
@@ -162,10 +165,10 @@ export default function Home() {
           </div>
 
           <div className="hidden md:block relative w-full aspect-square">
-            <Image 
+            <Image
               src="/members_hero_image.JPG"
-              alt="iGEM - Waseda Members" 
-              fill 
+              alt="iGEM - Waseda Members"
+              fill
               className="object-cover"
             />
           </div>
@@ -176,7 +179,7 @@ export default function Home() {
         {/* PCでは写真+黒不透明度65%の背景の上に文字を配置。スマホでは縦に並べる. */}
         <div className="w-full md:aspect-[2/1]">
           <div className="relative aspect-square md:aspect-auto h-full">
-            <Image 
+            <Image
               src="/recruiting-hero-image.jpg"
               alt="iGEM Jamboree 2024"
               fill
@@ -191,7 +194,7 @@ export default function Home() {
 
         <div className="md:absolute inset-0 z-30 flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[2/1]">
           <div className="mb-8">
-            <h3 
+            <h3
               className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-white"
               style={{ fontFamily: '"Arial Black", sans-serif' }}
             >
@@ -206,7 +209,7 @@ export default function Home() {
             {t('home.recruitment')}
           </p>
 
-          <LearnMore href={pages[4].href} textColor="text-gray-900 md:text-white"/>
+          <LearnMore href={pages[4].href} textColor="text-gray-900 md:text-white" />
         </div>
 
       </section>
@@ -231,7 +234,7 @@ export default function Home() {
         <div className="md:absolute inset-0 z-30 grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col justify-center px-8 py-4 md:px-12 xl:px-24 aspect-square md:col-start-2">
             <div className="mb-8">
-              <h3 
+              <h3
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text md:text-yellow"
                 style={{ fontFamily: '"Arial Black", sans-serif' }}
               >
@@ -246,12 +249,12 @@ export default function Home() {
               {t('home.donation')}
             </p>
 
-            <LearnMore href={pages[5].href} textColor="text-gray-900 md:text-white"/>
+            <LearnMore href={pages[5].href} textColor="text-gray-900 md:text-white" />
           </div>
         </div>
 
       </section>
     </>
-    
+
   );
 }
