@@ -17,20 +17,20 @@ export default function Home() {
 
       <section className="w-full bg-white relative z-30"> {/* About Us */}
         <div className="grid grid-cols-1 md:grid-cols-2"> {/* PCではロゴとテキストを横並び、スマホではロゴをテキストの上に配置 */}
-          <div className="relative aspect-square md:aspect-[4/3]">
-            <div className="absolute inset-[-10%] md:inset-[-15%] xl:inset-[-20%] z-30">
+          <div className="relative aspect-square md:aspect-[3/2]">
+            <div className="absolute inset-0 md:inset-[-15%] xl:inset-[-20%] z-30">
               <Image
                 src="/iGEM-Waseda_logo_trim.png"
                 alt="iGEM - Waseda Team Logo"
                 fill
-                className="object-contain"
+                className="object-contain md:"
                 sizes="(max-width: 768px) 300vw, 100vw"
                 priority
               />
             </div>
           </div>
 
-          <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[4/3]">
+          <div className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[3/2]">
             <div className="mb-8">
               <h3
                 className="font-heading-en font-black text-4xl lg:text-5xl xl:text-7xl 2xl:text-[5vw] font-black mb-1 leading-none tracking-tighter text-enji-text"
