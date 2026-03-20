@@ -17,7 +17,7 @@ export default function Home() {
   const t = useTranslations('home');
   const pages = PageName();
   return (
-    <>
+    <main className="w-full overflow-x-clip"> {/* 右に余白が出るバグ対策 */}
       <HeroImage />
 
       {/* ここにニュースを挿入 */}
@@ -31,7 +31,7 @@ export default function Home() {
       > {/* About Us */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <motion.div
-            className="relative aspect-square md:aspect-[4/3]"
+            className="relative aspect-square md:aspect-[3/2]"
             variants={slideInLeftVariants}
           >
             <div className="absolute inset-[-10%] md:inset-[-15%] xl:inset-[-20%] z-30">
@@ -47,7 +47,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[4/3]"
+            className="flex flex-col justify-center px-8 py-4 md:px-16 lg:px-24 aspect-square md:aspect-[3/2]"
             variants={slideInRightVariants}
           >
             <div className="mb-8">
@@ -310,6 +310,6 @@ export default function Home() {
           </div>
         </motion.section >
       </div>
-    </>
+    </main>
   );
 }
