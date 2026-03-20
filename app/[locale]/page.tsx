@@ -34,7 +34,7 @@ export default function Home() {
             className="relative aspect-square md:aspect-[3/2]"
             variants={slideInLeftVariants}
           >
-            <div className="absolute inset-[-10%] md:inset-[-15%] xl:inset-[-20%] z-30">
+            <div className="absolute inset-0 md:inset-[-15%] xl:inset-[-20%] z-30">
               <Image
                 src="/iGEM-Waseda_logo_trim.png"
                 alt="iGEM - Waseda Team Logo"
@@ -222,7 +222,7 @@ export default function Home() {
         </div>
       </motion.section >
 
-      <div className="bg-black">
+      <div className="md:bg-black">
         <motion.section
           className="w-full relative"
           initial="hidden"
