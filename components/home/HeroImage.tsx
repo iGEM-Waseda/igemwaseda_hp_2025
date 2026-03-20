@@ -1,23 +1,38 @@
+'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HeroImage() {
   return (
     // relativeを設定し、高さを画面いっぱいにする
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-      
-      <Image
-        src="/home-hero-image.jpg"
-        alt="iGEM - Waseda Hero Image"
-        fill // 親要素いっぱいに広げる
-        priority
-        className="object-cover object-center"
-        sizes="(max-width: 768px) 300vw, 100vw"
-      />
+
+      <motion.div
+        className="absolute inset-0"
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <Image
+          src="/home-hero-image.jpg"
+          alt="iGEM - Waseda Hero Image"
+          fill // 親要素いっぱいに広げる
+          priority
+          className="object-cover object-center"
+          sizes="(max-width: 768px) 300vw, 100vw"
+        />
+      </motion.div>
 
       {/* 不透明度65% */}
       <div className="absolute inset-0 bg-black/65 z-0"></div>
 
-      <div className="relative z-10 text-center px-2 flex flex-col items-center">
+      <motion.div
+        className="relative z-10 text-center px-2 flex flex-col items-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+      >
         <p className="text-[3.2vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[2vw] xl:text-[1.5vw] text-yellow font-medium">
           iGEM 2024 Top 10 Worldwide / Gold Medalist
         </p>
@@ -27,7 +42,7 @@ export default function HeroImage() {
         <p className="font-heading-en text-[3.25vw] sm:text-[3.2vw] md:text-[3vw] lg:text-[2.5vw] xl:text-[2vw] text-white font-medium" style={{ fontFamily: '"Arial Black", sans-serif', fontWeight: 900 }}>
           Waseda University Synthetic Biology Team
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }
