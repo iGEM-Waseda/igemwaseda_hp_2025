@@ -39,7 +39,7 @@ export default function Home() {
                 src="/iGEM-Waseda_logo_trim.png"
                 alt="iGEM - Waseda Team Logo"
                 fill
-                className="object-contain"
+                className="object-contain md:"
                 sizes="(max-width: 768px) 300vw, 100vw"
                 priority
               />
