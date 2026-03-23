@@ -462,7 +462,7 @@ export default function Members() {
             </div>
 
             <h1 className="heading" style={{ fontFamily: '"Arial Black", sans-serif' }}>
-              Wiki・Video・Illustrator
+              Wiki・Video・Design
             </h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-8 gap-y-8 lg:gap-y-12">
               <MembersCard 
