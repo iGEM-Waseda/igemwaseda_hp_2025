@@ -568,6 +568,13 @@ export default function Members() {
             department={t('seiTsukamura.department')}
           />
           <MembersCard 
+            nameJa="奈尾 颯大" 
+            nameEn="Sodai Nao" 
+            imgSrc="soudai-nao.png" 
+            role={t('sodaiNao.role')}
+            department={t('sodaiNao.department')}
+          />
+          <MembersCard 
             nameJa="中村 春香" 
             nameEn="Haruka Nakamura" 
             imgSrc="haruka-nakamura.png" 
