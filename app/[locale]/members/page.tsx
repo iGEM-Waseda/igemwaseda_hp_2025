@@ -554,6 +554,13 @@ export default function Members() {
             department={t('chiharuSeida.department')}
           />
           <MembersCard 
+            nameJa="高橋 せな" 
+            nameEn="Sena Takahashi" 
+            imgSrc="sena-takahashi.png" 
+            role={t('senaTakahashi.role')}
+            department={t('senaTakahashi.department')}
+          />
+          <MembersCard 
             nameJa="束村 晴" 
             nameEn="Sei Tsukamura" 
             imgSrc="sei-tsukamura.jpg" 
