@@ -37,24 +37,82 @@ export default function Team() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section"> {/* この実装は真似しない方がいい */}
+
+
         <p className="text">
-          {t('intro1')}
-        </p>
-        <p className="text">
-          {t('intro2')}
+          {t.rich('intro', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
 
         <h1 className="heading" id="wet">
           Wet
         </h1>
         <p className="text">
-          {t('wet1')}
+          {t.rich('wet1', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
-        <p className="text whitespace-pre-wrap">
-          {t('wet2')}
+        <p className="text">
+          {t.rich('wet2', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
-        <Image src="/wet.jpg" alt="wet" className="img" width={1792} height={1344} sizes="(max-width: 768px) 300vw, 100vw" />
+        <h2 className="subheadingsmall">
+          {t('wetSubTitle1')}
+        </h2>
+        <p className="text">
+          {t('wet3')}
+        </p>
+        <p className="text text-center font-bold">
+          {t('wet4')}
+        </p>
+        <p className="text">
+          {t('wet5')}
+        </p>
+        <Image src="/wet-fig-1.png" alt="wet-fig-1" className="img" width={850} height={503} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('wetFig1')}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('wetSubTitle2')}
+        </h2>
+        <p className="text">
+          {t('wet6')}
+        </p>
+        <Image src="/wet-fig-2.png" alt="wet-fig-2" className="img" width={1134} height={665} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('wetFig2')}
+        </p>
+        <Image src="/wet-fig-3.png" alt="wet-fig-3" className="img" width={1452} height={1128} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('wetFig3')}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('wetSubTitle3')}
+        </h2>
+        <p className="text">
+          {t.rich('wet7', {
+            b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>,
+            math: () => (
+              <span className="mx-0.5 font-serif italic">
+                N &times; 2<sup>n</sup>
+              </span>
+            )
+          })}
+        </p>
+        <Image src="/wet-fig-4.png" alt="wet-fig-4" className="img" width={287} height={178} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('wetFig4')}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('wetSubTitle4')}
+        </h2>
+        <p className="text">
+          {t('wet8')}
+        </p>
+        <Image src="/wet-fig-5.png" alt="wet-fig-5" className="img" width={998} height={687} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('wetFig5')}
+        </p>
+        <p className="text">
+          {t.rich('wet9', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
+        </p>
 
         <h1 className="heading" id="dry">
           Dry
@@ -68,12 +126,34 @@ export default function Team() {
           Human Practice
         </h1>
         <p className="text">
-          {t('hp')}
+          {t.rich('hp1', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
-        <Image src="/human-practice.jpg" alt="hp" className="img" width={568} height={402} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text">
+          {t.rich('hp2', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
+        </p>
+        <p className="text">
+          {t('hp3')}
+        </p>
+        <Image src="/hp-fig-1.png" alt="hp1" className="img" width={975} height={399} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('hpFig1')}
+        </p>
+        <p className="text">
+          {t('hp4')}
+        </p>
+        <p className="text">
+          {t('hp5')}
+        </p>
+        <Image src="/hp-fig-2.jpg" alt="hp2" className="img" width={4032} height={3024} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('hpFig2')}
+        </p>
+        <p className="text">
+          {t.rich('hp6', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
+        </p>
 
         <h1 className="heading" id="other">
-          Wiki・Video・Illustrator
+          Wiki・Video・Design
         </h1>
         <h2 className="subheading">
           Wiki
@@ -81,11 +161,8 @@ export default function Team() {
         <p className="text">
           {t('wiki')}
         </p>
-        <p className="text whitespace-pre-wrap">
-          {t('frontend')}
-        </p>
-        <p className="text whitespace-pre-wrap">
-          {t('design')}
+        <p className="text">
+          {t.rich('frontend', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
         <Image src="/design.png" alt="design" className="img" width={3572} height={1962} sizes="(max-width: 768px) 300vw, 100vw" />
 
@@ -93,7 +170,7 @@ export default function Team() {
           Video
         </h2>
         <p className="text">
-          {t('video')}
+          {t.rich('video', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
         <div className="flex flex-col md:flex-row">
           <div className="youtube-container">
@@ -105,10 +182,10 @@ export default function Team() {
         </div>
 
         <h2 className="subheading">
-          Illustrator
+          Design
         </h2>
         <p className="text">
-          {t('illustrator')}
+          {t.rich('design', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
         <Image src="/illustrator.png" alt="illustrator" className="img" width={4312} height={2962} sizes="(max-width: 768px) 300vw, 100vw" />
 

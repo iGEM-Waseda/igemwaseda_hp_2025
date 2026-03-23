@@ -142,6 +142,26 @@ body {
   }
 }
 
+.subheadingsmall {
+  color: #8f1727; /* text-gray-800 */
+  font-size: 1.125rem; /* text-xl (20px) */
+  line-height: 1.75rem; /* text-xl の行間 (28px) */
+  font-weight: 700; /* font-bold */
+  text-align: start; /* text-start（左揃え） */
+  margin-top: 0.75rem; /* my-3 (12px) */
+  margin-bottom: 0.75rem; /* my-3 (12px) */
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+
+/* md (768px以上) のスタイル */
+@media (min-width: 768px) {
+  .subheadingsmall {
+    font-size: 1.25rem; /* md:text-2xl (24px) */
+    line-height: 1.5rem; /* md:text-2xl の行間 (32px) */
+  }
+}
+
 /* p のスタイル */
 .text {
   color: #1f2937;
