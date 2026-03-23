@@ -35,7 +35,7 @@ export default async function LocaleLayout({ children, params }: {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} style={{ colorScheme: 'light' }}>
+    <html lang={locale} style={{ colorScheme: 'light' }} className="scroll-pt-[48px] md:scroll-pt-[64px] scroll-smooth">
       <body className={`${notoJP.className} bg-white`}>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header/>
