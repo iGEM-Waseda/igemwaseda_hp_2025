@@ -118,9 +118,77 @@ export default function Team() {
           Dry
         </h1>
         <p className="text">
-          {t('dry')}
+          {t.rich('dry1', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
         </p>
-        <Image src="/dry-simulation.png" alt="dry" className="img" width={1280} height={720} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text">
+          {t('dry2')}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('drySubTitle1')}
+        </h2>
+        <p className="text">
+          {t('dry3')}
+        </p>
+        <Image src="/dry-fig-1.png" alt="dry-fig-1" className="img" width={1924} height={768} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('dryFig1')}
+        </p>
+        <p className="text">
+          {t('dry4')}
+        </p>
+        <Image src="/dry-fig-2.png" alt="dry-fig-2" className="img" width={2608} height={1088} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('dryFig2')}
+        </p>
+        <p className="text">
+          {t('dry5')}
+        </p>
+        <Image src="/dry-fig-3.png" alt="dry-fig-3" className="img" width={2466} height={1144} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('dryFig3')}
+        </p>
+        <p className="text">
+          {t.rich('dry6', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('drySubTitle2')}
+        </h2>
+        <p className="text">
+          {t('dry7')}
+        </p>
+        <p className="text">
+          {t('dry8')}
+        </p>
+        <Image src="/dry-fig-4.png" alt="dry-fig-4" className="img" width={1280} height={720} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('dryFig4')}
+        </p>
+        <p className="text">
+          {t.rich('dry9', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('drySubTitle3')}
+        </h2>
+        <p className="text">
+          {t.rich('dry10', {a: (chunks) => <a href="https://tomoino.github.io/education-tool/" target="_blank" className="underline underline-offset-4 hover:text-yellow">{chunks}</a>})}
+        </p>
+        <Image src="/dry-fig-5.png" alt="dry-fig-5" className="img" width={1907} height={1231} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('dryFig5')}
+        </p>
+        <h2 className="subheadingsmall">
+          {t('drySubTitle4')}
+        </h2>
+        <p className="text">
+          {t('dry11')}
+        </p>
+        <Image src="/dry-fig-6.jpg" alt="dry-fig-6" className="img" width={4032} height={3024} sizes="(max-width: 768px) 300vw, 100vw" />
+        <p className="text text-center font-bold">
+          {t('dryFig6')}
+        </p>
+        <p className="text">
+          {t.rich('dry12', {b: (chunks) => <span className="font-bold text-gray-900">{chunks}</span>})}
+        </p>
 
         <h1 className="heading" id="hp">
           Human Practice
