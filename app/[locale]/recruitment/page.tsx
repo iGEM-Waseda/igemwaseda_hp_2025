@@ -2,16 +2,18 @@
 
 import Image from 'next/image';
 // 新歓期間のみコメントを外す
-// import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useTranslations, useLocale } from "next-intl";
 import '@/app/globals.css'
 
 // 新歓期間のみコメントを外す
 // 新歓の度にチラシを変える
-// const flyers = [
-//   { src: '/flyer-1.jpg', alt: 'Recruiting Flyer 1' },
-//   { src: '/flyer-2.jpg', alt: 'Recruiting Flyer 2' },
-// ];
+const flyers = [
+  { src: '/flyer-1.png', alt: 'Recruiting Flyer 1' },
+  { src: '/flyer-2.png', alt: 'Recruiting Flyer 2' },
+  { src: '/flyer-3.png', alt: 'Recruiting Flyer 3' },
+  { src: '/flyer-4.png', alt: 'Recruiting Flyer 4' },
+];
 
 export default function Recruitment() {
   const t = useTranslations('recruitment');
@@ -20,43 +22,43 @@ export default function Recruitment() {
 
   // 新歓期間のみコメントを外す
   // // チラシをクリックしたら浮かび上がるようにするためのコード(Geminiに丸投げ)
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [currentIndex, setCurrentIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // const openModal = (index: number) => {
-  //   setCurrentIndex(index);
-  //   setIsOpen(true);
-  // };
+  const openModal = (index: number) => {
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
-  // const closeModal = () => {
-  //   setIsOpen(false);
-  // };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
-  // const prevImage = useCallback(() => {
-  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + flyers.length) % flyers.length);
-  // }, []);
+  const prevImage = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + flyers.length) % flyers.length);
+  }, []);
 
-  // const nextImage = useCallback(() => {
-  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % flyers.length);
-  // }, []);
+  const nextImage = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % flyers.length);
+  }, []);
 
-  // useEffect(() => {
-  //   if (!isOpen) return;
+  useEffect(() => {
+    if (!isOpen) return;
 
-  //   const handleKeyDown = (e: KeyboardEvent) => {
-  //     if (e.key === 'Escape') closeModal();
-  //     if (e.key === 'ArrowLeft') prevImage();
-  //     if (e.key === 'ArrowRight') nextImage();
-  //   };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+    };
 
-  //   window.addEventListener('keydown', handleKeyDown);
-  //   document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
 
-  //   return () => {
-  //     window.removeEventListener('keydown', handleKeyDown);
-  //     document.body.style.overflow = '';
-  //   };
-  // }, [isOpen, prevImage, nextImage]);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [isOpen, prevImage, nextImage]);
 
   return (
     <>
@@ -123,16 +125,16 @@ export default function Recruitment() {
         </div>
 
         {/* 新歓チラシ(新歓期間のみコメントを外す) */}
-        {/* <h1 className="heading">
+        <h1 className="heading">
           {t('flyer')}
-        </h1> */}
+        </h1>
 
         {/* 新歓チラシ(コードはGeminiに丸投げ、新歓期間のみコメントを外す) */}
-        {/* <div className="flex items-center justify-center gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-8">
           {flyers.map((flyer, index) => (
             <div 
               key={index} 
-              className="relative cursor-pointer group w-[45%] aspect-[1080/1350] overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow"
+              className="relative cursor-pointer group w-full aspect-[1414/2000] overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow"
               onClick={() => openModal(index)}
             >
               <Image
@@ -140,7 +142,7 @@ export default function Recruitment() {
                 alt={flyer.alt}
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 768px) 50vw, 30vw"
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
@@ -161,10 +163,10 @@ export default function Recruitment() {
               <Image
                 src={flyers[currentIndex].src}
                 alt={flyers[currentIndex].alt}
-                width={1080} 
-                height={1350}
+                width={1414} 
+                height={2000}
                 className="w-auto h-auto max-w-full max-h-[90vh] object-contain rounded-lg"
-                sizes="90vw"
+                sizes="75vw"
                 priority
               />
 
@@ -178,7 +180,7 @@ export default function Recruitment() {
 
               <button 
                 onClick={prevImage} 
-                className="absolute left-[-20px] md:left-[-60px] top-1/2 -translate-y-1/2 p-3 bg-white/10 text-white rounded-full hover:bg-white/30 transition-colors"
+                className="absolute left-[-40px] md:left-[-60px] top-1/2 -translate-y-1/2 p-3 bg-white/10 text-white rounded-full hover:bg-white/30 transition-colors"
                 aria-label="Previous image"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
@@ -186,7 +188,7 @@ export default function Recruitment() {
 
               <button 
                 onClick={nextImage} 
-                className="absolute right-[-20px] md:right-[-60px] top-1/2 -translate-y-1/2 p-3 bg-white/10 text-white rounded-full hover:bg-white/30 transition-colors"
+                className="absolute right-[-40px] md:right-[-60px] top-1/2 -translate-y-1/2 p-3 bg-white/10 text-white rounded-full hover:bg-white/30 transition-colors"
                 aria-label="Next image"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
@@ -198,7 +200,7 @@ export default function Recruitment() {
 
             </div>
           </div>
-        )} */}
+        )}
 
         {/* Q&Aセクション */}
         <h1 className="heading">
