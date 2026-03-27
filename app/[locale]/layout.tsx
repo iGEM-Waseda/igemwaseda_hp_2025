@@ -10,8 +10,32 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "iGEM Waseda",
-  description: "iGEM - Wasedaは合成生物学の世界大会であるiGEMの早稲田大学代表チームです。生物を「プログラミング」し、実験で検証すること地域の健康や環境問題を解決することを目標としています。普段はサークルの形で活動しており、日々サーベイや実験に励んでいます。生物系・情報系など様々な分野の学生が活躍しています",
+  metadataBase: new URL('https://igemwaseda-hp-2025.vercel.app/'),
+  
+  title: {
+    template: '%s - iGEM Waseda',
+    default: 'iGEM Waseda',
+  },
+
+  description: "iGEM - Wasedaは合成生物学の世界大会であるiGEMの早稲田大学代表チームです。生物を「プログラミング」し、実験で検証すること地域の健康や環境問題を解決することを目標としています。普段はサークルの形で活動しており、日々サーベイや実験に励んでいます。生物系・情報系など様々な分野の学生が活躍しています。",
+  
+  openGraph: {
+    siteName: 'iGEM Waseda',
+    type: 'website',
+    images: ['/homeimage.png'],
+    locale: 'ja_JP',
+  },
+  
+  // Twitter(X)カードの基本設定
+  twitter: {
+    card: 'summary_large_image',
+    title: {
+      template: '%s - iGEM Waseda',
+      default: 'iGEM Waseda',
+    },
+    description: "iGEM - Wasedaは合成生物学の世界大会であるiGEMの早稲田大学代表チームです。生物を「プログラミング」し、実験で検証すること地域の健康や環境問題を解決することを目標としています。普段はサークルの形で活動しており、日々サーベイや実験に励んでいます。生物系・情報系など様々な分野の学生が活躍しています。",
+    images: ['/homeimage.png'],
+  },
 };
 
 export function generateStaticParams() {
