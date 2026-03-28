@@ -3,6 +3,30 @@ import TwitterButton from "@/components/TwitterButton"
 import InstagramButton from "@/components/InstagramButton"
 import MailButton from "@/components/MailButton"
 import { useTranslations } from "next-intl"
+import { Metadata } from 'next';
+
+export async function generateMetadata({ 
+  params: { locale } 
+}: { 
+  params: { locale: string } 
+}): Promise<Metadata> {
+  const pathName = 'contact';
+  
+  const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
+
+  return {
+    title: 'Contact',
+ 
+    alternates: {
+      canonical: currentPath,
+      languages: {
+        'en': `/en/${pathName}`,
+        'ja': `/${pathName}`,
+        'x-default': `/${pathName}`,
+      },
+    },
+  };
+}
 
 export default function Contact() {
   const t = useTranslations('contact');

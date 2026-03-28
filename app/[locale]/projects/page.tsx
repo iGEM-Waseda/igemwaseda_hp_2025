@@ -3,6 +3,30 @@ import ProjectLogoLeftSide from "@/components/projects/ProjectLogoLeftSide";
 import ProjectLogoRightSide from "@/components/projects/ProjectLogoRightSide";
 import { useTranslations } from "next-intl";
 import { PrizesBadgeProps } from "@/lib/types"
+import { Metadata } from 'next';
+
+export async function generateMetadata({ 
+  params: { locale } 
+}: { 
+  params: { locale: string } 
+}): Promise<Metadata> {
+  const pathName = 'projects';
+  
+  const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
+
+  return {
+    title: 'Projects',
+ 
+    alternates: {
+      canonical: currentPath,
+      languages: {
+        'en': `/en/${pathName}`,
+        'ja': `/${pathName}`,
+        'x-default': `/${pathName}`,
+      },
+    },
+  };
+}
 
 export default function Projects() {
   const t = useTranslations('projects');

@@ -1,6 +1,30 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import '@/app/globals.css'
+import { Metadata } from 'next';
+
+export async function generateMetadata({ 
+  params: { locale } 
+}: { 
+  params: { locale: string } 
+}): Promise<Metadata> {
+  const pathName = 'team';
+  
+  const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
+
+  return {
+    title: 'Team',
+ 
+    alternates: {
+      canonical: currentPath,
+      languages: {
+        'en': `/en/${pathName}`,
+        'ja': `/${pathName}`,
+        'x-default': `/${pathName}`,
+      },
+    },
+  };
+}
 
 export default function Team() {
   const t = useTranslations('team');
