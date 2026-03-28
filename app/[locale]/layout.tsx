@@ -16,7 +16,6 @@ export async function generateMetadata({
   params: { locale: string } 
 }): Promise<Metadata> {
   
-  // JSONの 'layout.metadata' グループから翻訳データを取得
   const t = await getTranslations({ locale, namespace: 'common' });
 
   return {
