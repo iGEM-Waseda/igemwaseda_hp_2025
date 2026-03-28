@@ -6,7 +6,7 @@ export default function Custom404() {
       if (typeof window !== "undefined") {
         
         const timer = setTimeout(() => {
-          window.location.replace('http://localhost:3000/');
+          window.location.replace('https://igem-waseda.netlify.app/');
         }, 5000); 
 
         return () => clearTimeout(timer);
@@ -20,7 +20,7 @@ export default function Custom404() {
         <p className="p-2">Redirecting to home in 5 seconds...</p>
         
         <div style={{ marginTop: '20px' }}>
-          <a href="http://localhost:3000/" className="p-2" style={{ color: '#0070f3', textDecoration: 'underline' }}>
+          <a href="https://igem-waseda.netlify.app/" className="p-2" style={{ color: '#0070f3', textDecoration: 'underline' }}>
             Go back to Home now
           </a>
         </div>
