@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import JumpToDonationSectionById from '@/components/donation/JumpToDonationSectionById';
-import MailButton from "@/components/MailButton";
+// import MailButton from "@/components/MailButton";
 
 export default function DonationClientPage() {
   const t = useTranslations('donation');
@@ -96,12 +96,12 @@ export default function DonationClientPage() {
           {t('contact')}
         </p>
 
-        <div className="flex items-center justify-center gap-4">
+        {/* <div className="flex items-center justify-center gap-4">
           <MailButton textColor="text-gray-800" hoverColor="hover:text-yellow" />
           <p className="text-base md:text-lg lg:text-xl text-gray-800 font-medium">
             igemwaseda2020@gmail.com
           </p>
-        </div>
+        </div> */}
 
       </section>
     </>
