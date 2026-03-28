@@ -8,35 +8,45 @@ import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://igemwaseda-hp-2025.vercel.app/'),
+export async function generateMetadata({ 
+  params: { locale } 
+}: { 
+  params: { locale: string } 
+}): Promise<Metadata> {
   
-  title: {
-    template: '%s - iGEM Waseda',
-    default: 'iGEM Waseda',
-  },
+  // JSONの 'layout.metadata' グループから翻訳データを取得
+  const t = await getTranslations({ locale, namespace: 'common' });
 
-  description: "iGEM - Wasedaは合成生物学の世界大会であるiGEMの早稲田大学代表チームです。生物を「プログラミング」し、実験で検証することを通して様々な社会問題を解決することを目標としています。普段はサークルの形で活動しており、日々サーベイや実験に励んでいます。生物系に限らず数学系や情報系など様々な分野の学生が活躍しています。",
+  return {
+    metadataBase: new URL('https://igemwaseda-hp-2025.vercel.app/'),
   
-  openGraph: {
-    siteName: 'iGEM Waseda',
-    type: 'website',
-    images: ['/homeimage.png'],
-    locale: 'ja_JP',
-  },
-  
-  // Twitter(X)カードの基本設定
-  twitter: {
-    card: 'summary_large_image',
     title: {
       template: '%s - iGEM Waseda',
       default: 'iGEM Waseda',
     },
-    description: "iGEM - Wasedaは合成生物学の世界大会であるiGEMの早稲田大学代表チームです。生物を「プログラミング」し、実験で検証することを通して様々な社会問題を解決することを目標としています。普段はサークルの形で活動しており、日々サーベイや実験に励んでいます。生物系に限らず数学系や情報系など様々な分野の学生が活躍しています。",
-    images: ['/homeimage.png'],
-  },
-};
+
+    description: t('description'),
+    
+    openGraph: {
+      siteName: 'iGEM Waseda',
+      type: 'website',
+      images: ['/homeimage.png'],
+      locale: locale === 'ja' ? 'ja_JP' : 'en_US',
+    },
+    
+    twitter: {
+      card: 'summary_large_image',
+      title: {
+        template: '%s - iGEM Waseda',
+        default: 'iGEM Waseda',
+      },
+      description: t('description'),
+      images: ['/homeimage.png'],
+    },
+  };
+}
 
 export function generateStaticParams() {
   return [{locale: 'ja'}, {locale: 'en'}];
