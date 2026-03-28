@@ -5,13 +5,19 @@ import MailButton from "@/components/MailButton"
 import { useTranslations } from "next-intl"
 import { Metadata } from 'next';
 
-export async function generateMetadata({ 
-  params: { locale } 
-}: { 
-  params: { locale: string } 
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: { 
+    params: Promise<{ locale: string }> 
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const pathName = 'contact';
-  
+
   const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
 
   return {

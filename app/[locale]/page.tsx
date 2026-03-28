@@ -1,12 +1,17 @@
 import HomeClientPage from '@/components/home/HomeClientPage';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ 
-  params: { locale } 
-}: { 
-  params: { locale: string } 
-}): Promise<Metadata> {
-  
+export async function generateMetadata(
+  props: { 
+    params: Promise<{ locale: string }> 
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   // 🌟 locale を使って、そのページの正しいURLだけを組み立てる
   const currentPath = locale === 'ja' ? `/` : `/${locale}/`;
 
