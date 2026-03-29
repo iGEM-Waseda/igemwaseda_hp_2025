@@ -1,5 +1,6 @@
 import DonationClientPage from "@/components/donation/DonationClientPage";
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(
   props: { 
@@ -15,9 +16,12 @@ export async function generateMetadata(
   const pathName = 'donation';
 
   const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
+  
+  const t = await getTranslations({ locale, namespace: 'home.home' });
 
   return {
     title: 'Donation',
+    description: t('donation'),
  
     alternates: {
       canonical: currentPath,
@@ -26,6 +30,10 @@ export async function generateMetadata(
         'ja': `/${pathName}`,
         'x-default': `/${pathName}`,
       },
+    },
+
+    twitter: {
+      description: t('donation'),
     },
   };
 }

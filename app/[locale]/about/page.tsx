@@ -2,6 +2,7 @@ import Image from "next/image"
 import { useTranslations } from 'next-intl';
 import '@/app/globals.css'
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(
   props: { 
@@ -18,8 +19,11 @@ export async function generateMetadata(
 
   const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
 
+  const t = await getTranslations({ locale, namespace: 'home.home' });
+
   return {
     title: 'About',
+    description: t('aboutUs'),
  
     alternates: {
       canonical: currentPath,
@@ -28,6 +32,10 @@ export async function generateMetadata(
         'ja': `/${pathName}`,
         'x-default': `/${pathName}`,
       },
+    },
+
+    twitter: {
+      description: t('aboutUs'),
     },
   };
 }

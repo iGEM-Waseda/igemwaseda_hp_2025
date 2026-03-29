@@ -4,6 +4,7 @@ import InstagramButton from "@/components/InstagramButton"
 import MailButton from "@/components/MailButton"
 import { useTranslations } from "next-intl"
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(
   props: { 
@@ -19,9 +20,12 @@ export async function generateMetadata(
   const pathName = 'contact';
 
   const currentPath = locale === 'ja' ? `/${pathName}` : `/${locale}/${pathName}`;
+  
+  const t = await getTranslations({ locale, namespace: 'home.home' });
 
   return {
     title: 'Contact',
+    description: t('contact'),
  
     alternates: {
       canonical: currentPath,
@@ -30,6 +34,10 @@ export async function generateMetadata(
         'ja': `/${pathName}`,
         'x-default': `/${pathName}`,
       },
+    },
+
+    twitter: {
+      description: t('contact'),
     },
   };
 }
