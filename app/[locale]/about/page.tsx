@@ -22,7 +22,7 @@ export async function generateMetadata(
   const t = await getTranslations({ locale, namespace: 'home.home' });
 
   return {
-    title: 'About',
+    title: 'About Us',
     description: t('aboutUs'),
  
     alternates: {
