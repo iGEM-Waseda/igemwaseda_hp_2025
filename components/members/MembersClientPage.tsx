@@ -508,7 +508,7 @@ export default function MembersClientPage() {
         </div>
 
         <h1 className="heading" style={{ fontFamily: '"Arial Black", sans-serif' }}>
-          Alumini(2024)
+          Alumni(2024)
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-8 gap-y-8 lg:gap-y-12">
           <MembersCard 
