@@ -1,19 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-// 新歓期間のみコメントを外す
-import { useState, useEffect, useCallback } from 'react';
-import { useTranslations, useLocale } from "next-intl";
 import '@/app/globals.css'
+import { useTranslations, useLocale } from "next-intl";
+// 新歓期間のみコメントを外す
+// import { useState, useEffect, useCallback } from 'react';
 
 // 新歓期間のみコメントを外す
 // 新歓の度にチラシを変える
-const flyers = [
-  { src: '/flyer-1.png', alt: 'Recruiting Flyer 1' },
-  { src: '/flyer-2.png', alt: 'Recruiting Flyer 2' },
-  { src: '/flyer-3.png', alt: 'Recruiting Flyer 3' },
-  { src: '/flyer-4.png', alt: 'Recruiting Flyer 4' },
-];
+// const flyers = [
+//   { src: '/flyer-1.png', alt: 'Recruiting Flyer 1' },
+//   { src: '/flyer-2.png', alt: 'Recruiting Flyer 2' },
+//   { src: '/flyer-3.png', alt: 'Recruiting Flyer 3' },
+//   { src: '/flyer-4.png', alt: 'Recruiting Flyer 4' },
+// ];
 
 export default function RecruitmentClientPage() {
   const t = useTranslations('recruitment');
@@ -22,43 +22,43 @@ export default function RecruitmentClientPage() {
 
   // 新歓期間のみコメントを外す
   // // チラシをクリックしたら浮かび上がるようにするためのコード(Geminiに丸投げ)
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (index: number) => {
-    setCurrentIndex(index);
-    setIsOpen(true);
-  };
+  // const openModal = (index: number) => {
+  //   setCurrentIndex(index);
+  //   setIsOpen(true);
+  // };
 
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsOpen(false);
+  // };
 
-  const prevImage = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + flyers.length) % flyers.length);
-  }, []);
+  // const prevImage = useCallback(() => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + flyers.length) % flyers.length);
+  // }, []);
 
-  const nextImage = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % flyers.length);
-  }, []);
+  // const nextImage = useCallback(() => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % flyers.length);
+  // }, []);
 
-  useEffect(() => {
-    if (!isOpen) return;
+  // useEffect(() => {
+  //   if (!isOpen) return;
 
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeModal();
-      if (e.key === 'ArrowLeft') prevImage();
-      if (e.key === 'ArrowRight') nextImage();
-    };
+  //   const handleKeyDown = (e: KeyboardEvent) => {
+  //     if (e.key === 'Escape') closeModal();
+  //     if (e.key === 'ArrowLeft') prevImage();
+  //     if (e.key === 'ArrowRight') nextImage();
+  //   };
 
-    window.addEventListener('keydown', handleKeyDown);
-    document.body.style.overflow = 'hidden';
+  //   window.addEventListener('keydown', handleKeyDown);
+  //   document.body.style.overflow = 'hidden';
 
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = '';
-    };
-  }, [isOpen, prevImage, nextImage]);
+  //   return () => {
+  //     window.removeEventListener('keydown', handleKeyDown);
+  //     document.body.style.overflow = '';
+  //   };
+  // }, [isOpen, prevImage, nextImage]);
 
   return (
     <>
@@ -95,9 +95,9 @@ export default function RecruitmentClientPage() {
       </section>
 
       <section className="section">
-        {/* <p className="text">
+        <p className="text">
           {t('intro')}
-        </p> */}
+        </p>
 
         {/* 幹事長のお言葉 */}
         <div className="mx-auto px-4 py-4 md:px-0 grid grid-cols-1 md:grid-cols-4">
@@ -119,18 +119,18 @@ export default function RecruitmentClientPage() {
           </div>
           <div className="md:col-span-3 text-center md:text-left mx-4 md:mx-8 p-4 bg-gray-300 flex items-center justify-center">
             <p className="text">
-              iGEM - Waseda では、春（4月ごろ）と冬（12月ごろ）を新歓期間として新メンバーを募集しています。これまでの知識や経験に関わらず、誰でも入会することが可能です。iGEM - Waseda では、原則として活動は学部1～3年生としています。入会希望者が多くなった場合には選考を行う場合がございます。新歓の新歓のイベントについては Instagram や X で順次お知らせします。
+              {t('president')}
             </p>
           </div>
         </div>
 
         {/* 新歓チラシ(新歓期間のみコメントを外す) */}
-        <h1 className="heading">
+        {/* <h1 className="heading">
           {t('flyer')}
-        </h1>
+        </h1> */}
 
         {/* 新歓チラシ(コードはGeminiに丸投げ、新歓期間のみコメントを外す) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-8">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-8">
           {flyers.map((flyer, index) => (
             <div 
               key={index} 
@@ -200,7 +200,7 @@ export default function RecruitmentClientPage() {
 
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Q&Aセクション */}
         <h1 className="heading">

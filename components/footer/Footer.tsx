@@ -41,9 +41,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm sm:text-base md:text-lg font-medium tracking-wide mb-5">{pages[1].label}</h3>
-            <div className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm sm:text-base md:text-lg">
-              <Link href={projectItems[0].href} className="hover:text-yellow transition-colors w-fit">{projectItems[0].label}</Link>
+            <Link href={projectItems[0].href} className="hover:text-yellow transition-colors text-sm sm:text-base md:text-lg font-medium tracking-wide">{projectItems[0].label}</Link>
+            <div className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm sm:text-base md:text-lg mt-5">
               <Link href={projectItems[1].href} className="hover:text-yellow transition-colors w-fit">{projectItems[1].label}</Link>
               <Link href={projectItems[2].href} className="hover:text-yellow transition-colors w-fit">{projectItems[2].label}</Link>
               <Link href={projectItems[3].href} className="hover:text-yellow transition-colors w-fit">{projectItems[3].label}</Link>
@@ -51,9 +50,8 @@ export default function Footer() {
           </div>
 
           <div className="relative">
-            <h3 className="text-sm sm:text-base md:text-lg font-medium tracking-wide mb-5">{pages[2].label}</h3>
-            <div className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm sm:text-base md:text-lg">
-              <Link href={teamItems[0].href} className="hover:text-yellow transition-colors w-fit">{teamItems[0].label}</Link>
+            <Link href={teamItems[0].href} className="hover:text-yellow transition-colors text-sm sm:text-base md:text-lg font-medium tracking-wide">{teamItems[0].label}</Link>
+            <div className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm sm:text-base md:text-lg mt-5">
               <Link href={teamItems[1].href} className="hover:text-yellow transition-colors w-fit">{teamItems[1].label}</Link>
               <Link href={teamItems[2].href} className="hover:text-yellow transition-colors w-fit">{teamItems[2].label}</Link>
               <Link href={teamItems[3].href} className="hover:text-yellow transition-colors w-fit">{teamItems[3].label}</Link>
