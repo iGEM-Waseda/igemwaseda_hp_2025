@@ -245,5 +245,12 @@
   "sodaiNao": {
     "role": "Dry",
     "department": "先進理工学部 物理学科4年"
+  },
+  "makiAzuma": {
+    "role": "Dry",
+    "department": "教育学部 理学科 生物学専修1年",
+    "highSchool": "東京都立武蔵高等学校",
+    "hobbies": "ウーパールーパー グッズ集め/読書",
+    "message": "自分にとって初めての分野である「合成生物学」で、たくさん学び、挑戦していきたいです！"
   }
 }
