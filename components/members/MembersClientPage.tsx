@@ -222,8 +222,19 @@ export default function MembersClientPage() {
               />
             </div>
 
-          </div>
-        )}
+            <h1 className="heading" style={{ fontFamily: '"Arial Black", sans-serif' }}>
+              Freshman(B1)
+            </h1>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-8 gap-y-8 lg:gap-y-12">
+              <MembersCard 
+                nameJa="吾妻 真希" 
+                nameEn="Maki Azuma" 
+                imgSrc="maki-azuma.png" 
+                membersCardProps={t.raw('makiAzuma') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+            </div>
+        </div>
+      )}
 
         {!isSortByYear && (
           <div>
@@ -356,6 +367,12 @@ export default function MembersClientPage() {
                 nameEn="Shoko Aoyama" 
                 imgSrc="shoko-aoyama.jpg" 
                 membersCardProps={t.raw('shokoAoyama') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="吾妻 真希" 
+                nameEn="Maki Azuma" 
+                imgSrc="maki-azuma.png" 
+                membersCardProps={t.raw('makiAzuma') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
               />
               <MembersCard 
                 nameJa="虻川 友輝" 
