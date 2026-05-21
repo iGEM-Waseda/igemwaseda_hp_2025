@@ -117,7 +117,7 @@ export default function RecruitmentClientPage() {
               {t('name')}
             </h3>
           </div>
-          <div className="md:col-span-3 text-center md:text-left mx-4 md:mx-8 p-4 bg-gray-300 flex items-center justify-center">
+          <div className="md:col-span-3 text-center md:text-left mx-4 md:ml-8 md:mr-0 p-4 bg-gray-300 flex items-center justify-center">
             <p className="text">
               {t('president')}
             </p>
