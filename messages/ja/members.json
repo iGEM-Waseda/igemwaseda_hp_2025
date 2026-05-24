@@ -252,5 +252,59 @@
     "highSchool": "東京都立武蔵高等学校",
     "hobbies": "ウーパールーパー グッズ集め/読書",
     "message": "自分にとって初めての分野である「合成生物学」で、たくさん学び、挑戦していきたいです！"
+  },
+  "kahoruTakagi":{
+    "role": "Dry",
+    "department": "先進理工学部 電気・情報生命工学科1年",
+    "highSchool": "大阪府立天王寺高等学校",
+    "hobbies": "旅行/映画/運動/洋楽",
+    "message": "生物学の研究に携わるのは初めてですが、熱意をもって人一倍吸収し、チームの勝利のために頑張ります。"
+  },
+  "kensukeIto":{
+    "department": "先進理工学部 電気・情報生命工学科1年",
+    "highSchool": "早稲田大学高等学院",
+    "hobbies": "読書/音楽/散歩",
+    "message": "チームに貢献できるように頑張ります！"
+  },
+  "yuiEgawa":{
+    "department": "先進理工学部 化学・生命化学科1年",
+    "highSchool": "金沢大学附属高等学院",
+    "hobbies": "読書/アニメ/音楽",
+    "message": "新しいことにも積極的に挑戦し、チームの力になれるよう頑張ります！"
+  },
+  "tomonoriKigure":{
+    "department": "先進理工学部 生命医科学科1年",
+    "highSchool": "群馬県立太田高等学校",
+    "hobbies": "音楽鑑賞/カラオケ/散歩",
+    "message": "研究をしたことのない未熟者ですが、チームに貢献できるように、ここでの経験を糧にできるように精一杯頑張ります！"
+  },
+  "shuYamasaki":{
+    "department": "先進理工学部 応用物理学科1年",
+    "highSchool": "聖光学院高等学校",
+    "hobbies": "スノボ/麻雀/水泳",
+    "message": "初めて学ぶことばかりですが、頑張ります！"
+  },
+  "shunYoshizaki":{
+    "department": "教育学部 理学科 生物学専修1年",
+    "highSchool": "細田学園高等学校",
+    "hobbies": "ゲーム",
+    "message": "経験は浅いですが、できる限り力になれるように頑張ります！"
+  },
+  "harukaNumano":{
+    "department": "先進理工学部 電気・情報生命工学科1年",
+    "highSchool": "早稲田大学系属早稲田実業学校高等部",
+    "hobbies": "ゲーム/マンガ/運動",
+    "message": "ここで沢山学んでチームに貢献できるように頑張ります！"
+  },
+  "marikoTakagi": {
+    "role": "HP",
+    "department": "社会科学部 社会科学科4年",
+    "highSchool": "東洋英和女学院高等部",
+    "hobbies": "散歩/読書",
+    "message": "縁の下の力持ちとしてチームに貢献します！"
+  },
+  "masahitoHosokawa": {
+  "role": "Advisor",
+  "department": "先進理工学部 生命医科学科 教授"
   }
 }
