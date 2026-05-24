@@ -278,7 +278,7 @@
     "hobbies": "音楽鑑賞/カラオケ/散歩",
     "message": "研究をしたことのない未熟者ですが、チームに貢献できるように、ここでの経験を糧にできるように精一杯頑張ります！"
   },
-  "shuYamazaki":{
+  "shuYamasaki":{
     "department": "先進理工学部 応用物理学科1年",
     "highSchool": "聖光学院高等学校",
     "hobbies": "スノボ/麻雀/水泳",
@@ -295,5 +295,16 @@
     "highSchool": "早稲田大学系属早稲田実業学校高等部",
     "hobbies": "ゲーム/マンガ/運動",
     "message": "ここで沢山学んでチームに貢献できるように頑張ります！"
+  },
+  "marikoTakagi": {
+    "role": "HP",
+    "department": "社会科学部 社会科学科4年",
+    "highSchool": "東洋英和女学院高等部",
+    "hobbies": "散歩/読書",
+    "message": "縁の下の力持ちとしてチームに貢献します！"
+  },
+  "masahitoHosokawa": {
+  "role": "Advisor",
+  "department": "先進理工学部 生命医科学科 教授"
   }
 }
