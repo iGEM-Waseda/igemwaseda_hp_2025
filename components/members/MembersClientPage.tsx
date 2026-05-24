@@ -232,6 +232,48 @@ export default function MembersClientPage() {
                 imgSrc="maki-azuma.png" 
                 membersCardProps={t.raw('makiAzuma') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
               />
+              <MembersCard 
+                nameJa="伊藤 謙介" 
+                nameEn="Kensuke Ito" 
+                imgSrc="kensuke-ito.jpg" 
+                membersCardProps={t.raw('kensukeIto') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="江川 友彩" 
+                nameEn="Yui Egawa" 
+                imgSrc="yui-egawa.jpg" 
+                membersCardProps={t.raw('yuiEgawa') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="木暮 知哲" 
+                nameEn="Tomonori Kigure" 
+                imgSrc="tomonori-kigure.jpg" 
+                membersCardProps={t.raw('tomonoriKigure') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="髙木 かほる" 
+                nameEn="Kaho Takagi" 
+                imgSrc="kaho-takagi.jpg" 
+                membersCardProps={t.raw('kahoTakagi') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="沼野 遥" 
+                nameEn="Haruka Numano" 
+                imgSrc="haruka-numano.png" 
+                membersCardProps={t.raw('harukaNumano') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="山崎 修" 
+                nameEn="Shu Yamasaki" 
+                imgSrc="shu-yamasaki.jpg" 
+                membersCardProps={t.raw('shuYamasaki') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="吉崎 舜" 
+                nameEn="Shun Yoshizaki" 
+                imgSrc="shun-yoshizaki.jpg" 
+                membersCardProps={t.raw('shunYoshizaki') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
             </div>
         </div>
       )}
@@ -397,6 +439,12 @@ export default function MembersClientPage() {
                 nameEn="Suzu Shimokawa" 
                 imgSrc="suzu-shimokawa.jpeg" 
                 membersCardProps={t.raw('suzuShimokawa') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
+              />
+              <MembersCard 
+                nameJa="髙木 かほる" 
+                nameEn="Kaho Takagi" 
+                imgSrc="kaho-takagi.jpg" 
+                membersCardProps={t.raw('kahoTakagi') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
               />
               <MembersCard 
                 nameJa="田代 逞真" 
