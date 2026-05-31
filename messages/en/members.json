@@ -72,7 +72,7 @@
     "hobbies": "ジャズ/サックス",
     "message": "iGEMに参加した高校のOBの方のお話を聴き興味を持ち、参加しました。全力で頑張ります!"
   },
-  "taikiMori": {
+  "daikiMori": {
     "role": "Wet",
     "department": "先進理工学部 生命医科学科3年",
     "highSchool": "東京都市大学付属高校",
@@ -161,7 +161,7 @@
     "department": "基幹理工学部 応用数理学科2年",
     "highSchool": "広尾学園高等学校",
     "hobbies": "音楽",
-    "message": "Dryでチームに貢献します。頑張ります！"
+    "message": "Dryでチームに貢献します。頑張ります!"
   },
   "takumaTashiro": {
     "role": "Dry",
@@ -306,5 +306,12 @@
   "masahitoHosokawa": {
   "role": "Advisor",
   "department": "先進理工学部 生命医科学科 教授"
+  },
+  "sanaImazono": {
+    "role": "HP",
+    "department": "先進理工学部 生命医科学科3年",
+    "highSchool": "桜蔭高等学校",
+    "hobbies": "カフェ開拓/読書/旅行",
+    "message": "挑戦を恐れず、チームに貢献していきます！"
   }
 }
