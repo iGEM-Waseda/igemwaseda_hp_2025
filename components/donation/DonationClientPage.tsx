@@ -77,11 +77,26 @@ export default function DonationClientPage() {
         <p className="text">
           {t('return')}
         </p>
-        {locale === "ja" ? <Image src="/donation_chart.png" alt="donation graph" width={1223} height={304} className="w-full" /> : <Image src="/donation_chart_en.png" alt="donation graph" width={1336} height={412} className="w-full" />}
+        {/* {locale === "ja" ? <Image src="/donation_chart.png" alt="donation graph" width={1223} height={304} className="w-full" /> : <Image src="/donation_chart_en.png" alt="donation graph" width={1336} height={412} className="w-full" />} */}
         <h2 className="subheading">
           {t('flow')}
         </h2>
-        {locale === "ja" ? <Image src="/steps.png" alt="donation graph" width={1336} height={307} className="w-full" /> : <Image src="/steps_en.png" alt="donation graph" width={1336} height={307} className="w-full" />}
+        <div className="flex flex-col sm:flex-row items-stretch justify-center gap-4 sm:gap-0 mb-8 mt-12">
+          <div className="flex-1 w-full flex flex-col items-center justify-center bg-[#f5f0c4] rounded-xl p-6 text-center min-h-[120px]">
+            <p className="font-black text-xl mb-3">{t('step1Title')}</p>
+            <p className="font-bold text-base whitespace-pre-wrap leading-relaxed">{t('step1Body')}</p>
+          </div>
+          <div className="flex items-center justify-center text-[#5a131d] text-4xl font-black sm:mx-4 sm:rotate-0 rotate-90 self-center">→</div>
+          <div className="flex-1 w-full flex flex-col items-center justify-center bg-[#c9a5a8] rounded-xl p-6 text-center min-h-[120px]">
+            <p className="font-black text-xl mb-3">{t('step2Title')}</p>
+            <p className="font-bold text-base whitespace-pre-wrap leading-relaxed">{t('step2Body')}</p>
+          </div>
+          <div className="flex items-center justify-center text-[#5a131d] text-4xl font-black sm:mx-4 sm:rotate-0 rotate-90 self-center">→</div>
+          <div className="flex-1 w-full flex flex-col items-center justify-center bg-[#b08c90] rounded-xl p-6 text-center min-h-[120px]">
+            <p className="font-black text-xl mb-3">{t('step3Title')}</p>
+            <p className="font-bold text-base whitespace-pre-wrap leading-relaxed">{t('step3Body')}</p>
+          </div>
+        </div>
         <div className="flex justify-center mt-auto mx-auto">
           <a href="https://forms.gle/Wm4VeKUBuEL9zcQz7" target="_blank" className="mt-2 md:mt-6 inline-block bg-[#5a131d] focus-visible:ring text-white hover:text-yellow active:text-yellow text-sm sm:text-lg md:text-2xl font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
             {t('googleForm')}
