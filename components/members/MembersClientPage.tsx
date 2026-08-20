@@ -132,8 +132,8 @@ export default function MembersClientPage() {
               />
               <MembersCard 
                 nameJa="今園 咲菜" 
-                nameEn="Sana Imazono" 
-                imgSrc="sana-imazono.jpg" 
+                nameEn="Sana Imasono" 
+                imgSrc="sana-imasono.jpg" 
                 membersCardProps={t.raw('sanaImazono') as { role: string, department: string, highSchool: string, hobbies: string, message: string }}
               />
               <MembersCard 
